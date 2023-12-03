@@ -26,10 +26,46 @@
   <li>https://bootstrap-it.com/linux-start/</li>
 </ul>
 
+<h2> Notes: </h2>
+
+- [The Layers of a Linux Distribution](#firstnote)
+- [Linux Distributions](#secondnote)
+- [Installation](#thirdnote)
+
+## The Layers of a Linux Distribution <a name="firstnote"></a>
+
+<ol>The Layers of a Linux Distribution:
+  <li>The Linux kernel handles system hardware resources on behalf of the OS user</li>
+  <li>A Linux desktop is software designed to manage graphic interface features like windows, menus, and application controls</li>
+  <li>A Linux distribution will use a specific suite of system tools (like software package managers and process managers)</li>
+</ol>
+
+## Linux Distributions <a name="secondnote"></a>
+
+Because Linux is open source many people have created their version of Linux, also known as Distribution or Distros. They fit special needs.
+
+<ul>Example for such distributions are:
+  <li>Android (mobile devices)</li>
+  <li>Red Hat Enterprise Linux</li>
+  <li>CentOS</li>
+  <li>Kali Linux (security)</li>
+</ul>
+
+Distributions are build into families. The best know families are Debian (Ubuntu, Mint and Kali Linux), Red Hat Enterprise Linux (CentOS and Fedora), SUSE (OpenSUSE) and Arch Linux (LinHES and Manjaro).
+
+## Linux Installation <a name="thirdnote"></a>
+
+<p>Backround</p>
+<p>Configuration options</p>
+<p>Install: PC and Cloud/Docker instances</p>
+
 <style>
-  h2, ul {
+  h2, ul, ol {
     margin-left: 0;
     padding-left: 0;
   }
 
+  ol {
+    padding-top: 10px;
+  }
 </style>
