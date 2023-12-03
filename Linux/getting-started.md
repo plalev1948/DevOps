@@ -30,9 +30,7 @@
 
 - [The Layers of a Linux Distribution](#firstnote)
 - [Linux Distributions](#secondnote)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Installation](#thirdnote)
 
 ## The Layers of a Linux Distribution <a name="firstnote"></a>
 
@@ -54,6 +52,12 @@ Because Linux is open source many people have created their version of Linux, al
 </ul>
 
 Distributions are build into families. The best know families are Debian (Ubuntu, Mint and Kali Linux), Red Hat Enterprise Linux (CentOS and Fedora), SUSE (OpenSUSE) and Arch Linux (LinHES and Manjaro).
+
+## Linux Installation <a name="thirdnote"></a>
+
+<p>Backround</p>
+<p>Configuration options</p>
+<p>Install: PC and Cloud/Docker instances</p>
 
 <style>
   h2, ul, ol {
