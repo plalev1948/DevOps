@@ -31,8 +31,10 @@
 - [The Layers of a Linux Distribution](#firstnote)
 - [Linux Distributions](#secondnote)
 - [Installation](#thirdnote)
+- [Configuring the Linux Environment](#fourthnote)
+- [Linux Runlevels](#fifthnote)
 
-## The Layers of a Linux Distribution <a name="firstnote"></a>
+## The Layers of a Linux Distribution: <a name="firstnote"></a>
 
 <ol>The Layers of a Linux Distribution:
   <li>The Linux kernel handles system hardware resources on behalf of the OS user</li>
@@ -40,7 +42,7 @@
   <li>A Linux distribution will use a specific suite of system tools (like software package managers and process managers)</li>
 </ol>
 
-## Linux Distributions <a name="secondnote"></a>
+## Linux Distributions: <a name="secondnote"></a>
 
 Because Linux is open source many people have created their version of Linux, also known as Distribution or Distros. They fit special needs.
 
@@ -53,11 +55,61 @@ Because Linux is open source many people have created their version of Linux, al
 
 Distributions are build into families. The best know families are Debian (Ubuntu, Mint and Kali Linux), Red Hat Enterprise Linux (CentOS and Fedora), SUSE (OpenSUSE) and Arch Linux (LinHES and Manjaro).
 
-## Linux Installation <a name="thirdnote"></a>
+## Linux Installation: <a name="thirdnote"></a>
 
 <p>Backround</p>
 <p>Configuration options</p>
 <p>Install: PC and Cloud/Docker instances</p>
+
+## Configuring the Linux Environment: <a name="fourthnote"></a>
+
+  * Manage the Linux Environment 
+  * Understand the Linux boot process - BIOS/UEFI -> Master Boot Record (MBR) on boot launched -> Bootloader (GRUB) launched -> Linux kernel loaded into memory -> init executes config file targets (runlevels) -> Display manager loaded -> Desktop loaded
+  * Understand the Linux Filesystem Hierarchy Standard
+  * Manage your locale settings
+  * Discover your hardware environment
+
+## Linux Runlevels <a name="fifthnote"></a>
+
+  <ul>
+    <li>0 - system halt - this means "applying code `0` will shut the machine off"</li>
+    <li>1 - single-user (rescue) mode - allows to work through on a problem/issue with the stability that no other user will log on without your knowledge</li>
+    <li>3 - multi-user mode without GUI - provides only terminal connections</li>
+    <li>5 - multi-user mode with GUI - standard desktop machine. Multi-user means that more than 1 user can login at once</li>
+    <li>6 - reboot</li>
+  </ul>
+
+Notes:
+
+LMV = Logical Volume Management
+
+Overview of File System Hierarchy Standard (FHS)
+
+Managing Linux Environments:
+
+Managing System Hardware:
+
+Package managers:
+* working with Linux Software Repositories:
+Productivity software:
+Linux desktop applications: some of the major ones that might come in handy:
+- libre office
+- Google Docs
+- Thunderbird and Firefox
+- Apache and Engine X
+- MariaDB
+- Samba
+- Microsoft PowerShell
+
+Understanding Linux Desktops:
+Currently there are 3 main classes of desktop:
+- Cinnamon/Mate
+- Gnome
+- Xfce
+- KDE
+
+Working with the Linux Server:
+server - a computer on which there is at least one process, whose job it is to serve the needs of a remote user, usually called a client
 
 <style>
   h2, ul, ol {
