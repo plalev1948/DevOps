@@ -1,6 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <title>Getting Started with Linux</title>
+  <style>
+    h2, ul, ol {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    ol {
+      padding-top: 10px;
+    }
+  </style>
+
 <h1> Goals </h1>
 <p> My goal is by the end of the learning to be able to install and manage simple Linux deployment and futher develop my Linux administration skills. <p>
+</head>
 
+<body>
+<div class="main-paragraph">
 <br>
   <h2>Here I will store information about:</h2>
   <ul>
@@ -111,13 +130,6 @@ Currently there are 3 main classes of desktop:
 Working with the Linux Server:
 server - a computer on which there is at least one process, whose job it is to serve the needs of a remote user, usually called a client
 
-<style>
-  h2, ul, ol {
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  ol {
-    padding-top: 10px;
-  }
-</style>
+</div>
+</body>
+</html>
