@@ -31,29 +31,26 @@ This is going to be a GitHub repository for starting my journey in DevOps ðŸ’»ðŸ
       list-style-type: none;
     }
     input[type="checkbox"] {
-      margin-right: 10px;
-      transform: scale(1.5); /* Increase checkbox size */
+      display: none; /* Hide the checkboxes */
+    }
+    label {
+      display: inline-block;
+    }
+    label::before {
+      content: '\2610'; /* Unicode character for empty checkbox */
+      margin-right: 5px;
+      font-size: 20px;
+      vertical-align: middle;
+    }
+    input[type="checkbox"]:checked + label::before {
+      content: '\2611'; /* Unicode character for checked checkbox */
+      color: #888; /* Change color for checked items */
+      text-decoration: line-through; /* Apply strikethrough to checked items */
     }
     input[type="checkbox"]:checked + label {
-      text-decoration: line-through; /* Apply strikethrough to checked items */
+      text-decoration: line-through; /* Apply strikethrough to label text */
       color: #888; /* Change color for checked items */
     }
-    /* Hide the style tag content from README.md */
-    /* Display: none will prevent rendering in Markdown */
-    body::before {
-      content: '<style>'; /* Start style tag */
-      display: none;
-    }
-    body::after {
-      content: '</'; /* End style tag */
-      display: none;
-    }
-    /* This is necessary to prevent auto-closing of the tag in markdown */
-    body::after {
-      content: 'style>'; /* End style tag */
-      display: none;
-    }
-
   </style>
 </head>
 <body>
@@ -300,10 +297,8 @@ This is going to be a GitHub repository for starting my journey in DevOps ðŸ’»ðŸ
   </ul>
 </div>
 
-<!-- Hidden script using data URI to prevent visibility in README.md -->
 <script>
-/* <![CDATA[ */
-const scriptContent = `
+  // Dynamically create checkboxes on the page load
   document.addEventListener('DOMContentLoaded', function() {
     const checkboxes = document.querySelectorAll('.checklist input[type="checkbox"]');
     
@@ -315,14 +310,26 @@ const scriptContent = `
       });
     });
   });
-`;
-const encodedScript = encodeURIComponent(scriptContent).replace(/'/g,"%27").replace(/"/g,"%22");
-const decodedScript = decodeURIComponent(encodedScript);
-const scriptElement = document.createElement('script');
-scriptElement.textContent = decodedScript;
-document.body.appendChild(scriptElement);
-/* ]]> */
 </script>
+
+<!-- This part will not be rendered in GitHub -->
+<!-- Hide the style tag content from README.md -->
+<!-- Display: none will prevent rendering in Markdown -->
+<style>
+  body::before {
+    content: '<style>'; /* Start style tag */
+    display: none;
+  }
+  body::after {
+    content: '</'; /* End style tag */
+    display: none;
+  }
+  /* This is necessary to prevent auto-closing of the tag in markdown */
+  body::after {
+    content: 'style>'; /* End style tag */
+    display: none;
+  }
+</style>
 
 </body>
 </html>
