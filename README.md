@@ -9,51 +9,51 @@ This is going to be a GitHub repository for starting my journey in DevOps ðŸ’»ðŸ
 
 <h2> Goals and a Learn list: </h2>
 <div>
-* - [ ] Linux:
-  * ~~- [ ] Getting Started with Linux~~
-  * - [ ] Linux Command Line
-  * - [ ] Linux System Administration
-* - [ ] Git:
-  * - [ ] Getting Started with Git
-* - [ ] Networking:
-  * - [ ] Getting Started with Networking
-  * - [ ] SSL/TLS
-  * - [ ] LDAP
-  * - [ ] SMTP
-  * - [ ] OWASP
-  * - [ ] DNS
-  * - [ ] HTTPS
-  * - [ ] TCP/IP
-  * - [ ] Firewalls
-  * - [ ] Load Balances (F5)
-  * - [ ] IP subnets
-  * - [ ] VPN
-* - [ ] Docker:
-  * - [ ] Getting Started with Docker
-* - [ ] Kubernetes:
-  * - [ ] Getting Started with Kubernetes
-* - [ ] Infrastructure as Code:
-  * - [ ] Getting Started with Infrastructure as Code
-  * - [ ] Terraform
-* - [ ] Cloud Services:
-  * - [ ] AWS
-  * - [ ] GCP
-  * - [ ] Azure
-* - [ ] Jenkins:
-  * - [ ] Getting Started with Jenkins
-* - [ ] Helm Charts:
-  * - [ ] Getting Started with Helm Charts
-* - [ ] Istio Service Mesh:
-  * - [ ] Getting Started with Istio Service Mesh
-* - [ ] Golang:
-  * - [ ] Getting Started with Golang
-* - [ ] Vault and Secrets:
-  * - [ ] Getting Started with Vault and Secrets
-* - [ ] Observability:
-  * - [ ] Getting Started with Observability
-* - [ ] Spinnaker Deployments and Harness:
-  * - [ ] Spinnaker Deployments
-  * - [ ] Harness
+- [ ] Linux:
+~~- [ ] Getting Started with Linux~~
+  - [ ] Linux Command Line
+  - [ ] Linux System Administration
+- [ ] Git:
+  - [ ] Getting Started with Git
+- [ ] Networking:
+  - [ ] Getting Started with Networking
+  - [ ] SSL/TLS
+  - [ ] LDAP
+  - [ ] SMTP
+  - [ ] OWASP
+  - [ ] DNS
+  - [ ] HTTPS
+  - [ ] TCP/IP
+  - [ ] Firewalls
+  - [ ] Load Balances (F5)
+  - [ ] IP subnets
+  - [ ] VPN
+- [ ] Docker:
+  - [ ] Getting Started with Docker
+- [ ] Kubernetes:
+  - [ ] Getting Started with Kubernetes
+- [ ] Infrastructure as Code:
+  - [ ] Getting Started with Infrastructure as Code
+  - [ ] Terraform
+- [ ] Cloud Services:
+  - [ ] AWS
+  - [ ] GCP
+  - [ ] Azure
+- [ ] Jenkins:
+  - [ ] Getting Started with Jenkins
+- [ ] Helm Charts:
+  - [ ] Getting Started with Helm Charts
+- [ ] Istio Service Mesh:
+  - [ ] Getting Started with Istio Service Mesh
+- [ ] Golang:
+  - [ ] Getting Started with Golang
+- [ ] Vault and Secrets:
+  - [ ] Getting Started with Vault and Secrets
+- [ ] Observability:
+  - [ ] Getting Started with Observability
+- [ ] Spinnaker Deployments and Harness:
+  - [ ] Spinnaker Deployments
+  - [ ] Harness
 </div>
 </body>
 </html>
