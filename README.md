@@ -9,8 +9,9 @@ This is going to be a GitHub repository for starting my journey in DevOps ðŸ’»ðŸ
 
 <h2> Goals and a Learn list: </h2>
 <div>
-- [] Linux:
-~~- [ ] Getting Started with Linux~~
+
+- [ ] Linux:
+  - [x] ~~Getting Started with Linux~~
   - [ ] Linux Command Line
   - [ ] Linux System Administration
 - [ ] Git:
