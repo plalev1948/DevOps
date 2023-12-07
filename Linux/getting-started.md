@@ -3,16 +3,6 @@
 <head>
 <meta charset="UTF-8">
   <title>Getting Started with Linux</title>
-  <style>
-    h2, ul, ol {
-      margin-left: 0;
-      padding-left: 0;
-    }
-
-    ol {
-      padding-top: 10px;
-    }
-  </style>
 
 <h1> Goals </h1>
 <p> My goal is by the end of the learning to be able to install and manage simple Linux deployment and futher develop my Linux administration skills. <p>
@@ -47,11 +37,11 @@
 
 <h2> Notes: </h2>
 
-- [The Layers of a Linux Distribution](#firstnote)
-- [Linux Distributions](#secondnote)
-- [Installation](#thirdnote)
-- [Configuring the Linux Environment](#fourthnote)
-- [Linux Runlevels](#fifthnote)
+- [The Layers of a Linux Distribution: <a name="firstnote"></a>](#the-layers-of-a-linux-distribution-)
+- [Linux Distributions: <a name="secondnote"></a>](#linux-distributions-)
+- [Linux Installation: <a name="thirdnote"></a>](#linux-installation-)
+- [Configuring the Linux Environment: <a name="fourthnote"></a>](#configuring-the-linux-environment-)
+- [Linux Runlevels <a name="fifthnote"></a>](#linux-runlevels-)
 
 ## The Layers of a Linux Distribution: <a name="firstnote"></a>
 
