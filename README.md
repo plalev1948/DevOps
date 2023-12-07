@@ -9,12 +9,12 @@ This is going to be a GitHub repository for starting my journey in DevOps ðŸ’»ðŸ
   <title>`README.md` Checklist of Goals and a Learn List</title>
   <style>
     /* Defined your CSS styles */
-    body {
+    /* body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-    }
-    h1 {
+    } */
+    /* h1 {
       text-align: center;
       padding-top: 20px;
     }
@@ -27,33 +27,76 @@ This is going to be a GitHub repository for starting my journey in DevOps ðŸ’»ðŸ
       padding-left: 35px;
     }
     li {
-      margin-left: -25px; /* Adjust indent for the checkbox */
+      margin-left: -25px;
       list-style-type: none;
-    }
-    input[type="checkbox"] {
-      display: none; /* Hide the checkboxes */
+    } */
+    /* input[type="checkbox"] {
+      display: none;
     }
     label {
       display: inline-block;
     }
     label::before {
-      content: '\2610'; /* Unicode character for empty checkbox */
+      content: '\2610';
       margin-right: 5px;
       font-size: 20px;
       vertical-align: middle;
     }
     input[type="checkbox"]:checked + label::before {
-      content: '\2611'; /* Unicode character for checked checkbox */
-      color: #888; /* Change color for checked items */
-      text-decoration: line-through; /* Apply strikethrough to checked items */
+      content: '\2611';
+      color: #888;
+      text-decoration: line-through;
     }
     input[type="checkbox"]:checked + label {
-      text-decoration: line-through; /* Apply strikethrough to label text */
-      color: #888; /* Change color for checked items */
-    }
+      text-decoration: line-through;
+      color: #888;
+    } */
   </style>
 </head>
 <body>
+
+- [x] Linux:
+- [ ] Getting Started with Linux
+- [ ] Linux Command Line
+- [ ] Linux System Administration
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 
 <div>
   <h1>Goals and a Learn Checklist:</h1>
@@ -296,40 +339,5 @@ This is going to be a GitHub repository for starting my journey in DevOps ðŸ’»ðŸ
     </ul>
   </ul>
 </div>
-
-<script>
-  // Dynamically create checkboxes on the page load
-  document.addEventListener('DOMContentLoaded', function() {
-    const checkboxes = document.querySelectorAll('.checklist input[type="checkbox"]');
-    
-    checkboxes.forEach(function(checkbox) {
-      checkbox.checked = localStorage.getItem(checkbox.id) === 'true'; // Check the checkbox if stored state is 'true'
-      
-      checkbox.addEventListener('change', function() {
-        localStorage.setItem(checkbox.id, this.checked); // Save checkbox state to localStorage on change
-      });
-    });
-  });
-</script>
-
-<!-- This part will not be rendered in GitHub -->
-<!-- Hide the style tag content from README.md -->
-<!-- Display: none will prevent rendering in Markdown -->
-<style>
-  body::before {
-    content: '<style>'; /* Start style tag */
-    display: none;
-  }
-  body::after {
-    content: '</'; /* End style tag */
-    display: none;
-  }
-  /* This is necessary to prevent auto-closing of the tag in markdown */
-  body::after {
-    content: 'style>'; /* End style tag */
-    display: none;
-  }
-</style>
-
 </body>
 </html>
