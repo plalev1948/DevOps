@@ -118,6 +118,10 @@ Currently there are 3 main classes of desktop:
 Working with the Linux Server:
 server - a computer on which there is at least one process, whose job it is to serve the needs of a remote user, usually called a client
 
+Using Linux Containers:
+
+Working with Server Apps: Apache
+
 </div>
 </body>
 </html>
