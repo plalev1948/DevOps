@@ -71,3 +71,5 @@ Working with Linux Software Repositories and package managers:
 *  sudo apt install glabels
 
 *  sudo apt-get install glabels
+
+*  sudo lxc exec (the name of the container) /bin/bash (to specify the type of shell I want to run) - to open the terminal session within the running container
