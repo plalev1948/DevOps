@@ -73,3 +73,13 @@ Working with Linux Software Repositories and package managers:
 *  sudo apt-get install glabels
 
 *  sudo lxc exec (the name of the container) /bin/bash (to specify the type of shell I want to run) - to open the terminal session within the running container
+
+*  sudo apt install snapd - command to install locally snapd
+
+*  snap install nextcloud - command to install nextcloud with `snap`
+
+*  cd /var/snap - enter a directory
+
+*  ls 
+
+*  cd nextcloud - enter nextcloud directory
