@@ -122,6 +122,19 @@ Using Linux Containers:
 
 Working with Server Apps: Apache
 
+A software like APACHE or NGINX is a software that controls the way digital resources like webpages on a server are exposed to clients across a network or across the internet.
+
+Dropbox and Amazon Web Services S3 - document hosting service.
+
+To install manually Nextcloud you need to :
+* install a LAMP server;
+* configure service connectivity;
+* download Nextcloud archive;
+* set permissions;
+* troubleshoot.
+
+All of this above can be done with a snap. `A snap` is a kind of virtual partition that exists within your file system inside its own isolated environment.
+
 </div>
 </body>
 </html>
