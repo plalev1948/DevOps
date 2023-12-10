@@ -83,3 +83,23 @@ Working with Linux Software Repositories and package managers:
 *  ls 
 
 *  cd nextcloud - enter nextcloud directory
+
+Linux Command Line - track down and manage digital resources, test network connectivity, build scripts to improve work efficiency and bash scripting:
+
+* sudo apt update - use the following command to update the package lists to get information on the newest versions of packages and their dependencies:
+* sudo apt upgrade - you can upgrade the installed packages to their latest versions using the following command
+* sudo apt full-upgrade - you can also perform a full system upgrade, which includes installing new dependencies if required;
+* sudo apt list --upgradable - you can check if your system is up to date by running this command;
+* sudo apt install info - install info
+* info - offers a menu of major topics, including a list of installed programs
+* cd /usr/share/doc/wget - open the documentation
+* man wget - this command will display a well-organized reference listing that command`s syntax, usage patters and command line arguments.
+* wget - a simple program that you run with the address of a web page or file that you would like to download to your current directory
+* wget --help - displays different commands and helps the user with the usage
+* wget --help | less - to pipe this output to the less text reader
+* type wget - this can tell you how a specifiedword would be interpreted by Bash. For example, running type of wget, for instance, tells us that it's a binary command that actually exists in the usr/bin directory.
+* ls -a - lists all the files in the directory
+* less .bashrc - shows what the file is consisted of
+* less .profile
+* less /etc/profile
+* cat /etc/passwd
