@@ -16,7 +16,7 @@
     <li>software package management systems</li>
     <li>server virtualizations</li>
     <li>server application administration</li>
-  <ul>
+  </ul>
 <br>
 
 <h2>Repository Overview:</h2>
@@ -134,6 +134,50 @@ To install manually Nextcloud you need to :
 * troubleshoot.
 
 All of this above can be done with a snap. `A snap` is a kind of virtual partition that exists within your file system inside its own isolated environment.
+
+<h2>Linux Command Line:</h2>
+<br>
+  <ul>
+    <li>basics of command syntax patterns</li>
+    <li>finding and panipulating data in the Linux file system</li>
+    <li>network connectivity</li>
+    <li>bash scripting</li>
+  </ul>
+  <br>
+  <ul> Overview of things to learn:
+    <li>core command line tools</li>
+    <li>help resources</li>
+    <li>configure the Linux environment</li>
+    <li>command line syntax</li>
+    <li>resources are disributed through the Linux file system</li>
+  </ul>
+
+<br>
+  <ul>Goal:
+    <li>use the Linux command line to track down and manage digital resources</li>
+    <li>test network connectivity</li>
+    <li>build scripts to improve work efficiency</li>
+    <li>bash scripting</li>
+  </ul>
+
+Linux has its own built-in support systems.
+
+I prefixed apt with the word sudo because on most Linux systems sudo allows privileged users to run single programs with full admin powers without the need to run entire shell sessions as root, something that over the long term carries significant security risks.
+
+You can use the `/` to make searches in Ubuntu, just like you are using `ctrl` + `F`. For example, if I type info, after that `/wget` and hit enter it's going to take me to the place where `wget` has been used. After that you can use the up and down keys to move to a menu that you would like to explore further and hit Enter.
+
+Example of a search using `/`:
+1. type `/wget`.
+2. after the search is on `wget`, hit Enter.
+3. hit again Enter on `examples`.
+4. navigate to `simple usage` and hit enter.
+
+The same result can be achieved, if I type:
+
+`info wget examples simple`
+
+The Linux Terminal: the Linux shell is not quite the same thing as the Linux Terminal. The command `ls -a` lists all the files in the directory. The dot at the beginning of the file name indicates that it's hidden, meaning it won't be displayed when you run a plain old `ls` command without the a argument.
+
 
 </div>
 </body>
