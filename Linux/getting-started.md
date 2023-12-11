@@ -178,6 +178,14 @@ The same result can be achieved, if I type:
 
 The Linux Terminal: the Linux shell is not quite the same thing as the Linux Terminal. The command `ls -a` lists all the files in the directory. The dot at the beginning of the file name indicates that it's hidden, meaning it won't be displayed when you run a plain old `ls` command without the a argument.
 
+Linux Syntax Patterns and Shortcuts: common usage patters shared by many Linux commands.
+  Invoking a command always starts with the command name. In some cases, as with the `ls` command, just the name on its own is enough to return a result. However,
+you'll usually need to add some combination of arguments and parameters to get the most out of a tool.
+
+  There are exceptions of course: using the administration `ip` command, for instance, can use the `addr` argument without a dash to show the IP addresses
+associated with your system's network interfaces. 
+
+  Keep in mind there is autocomplete for Linux! It will work when there is only one possible matching possibility in the directory.
 
 </div>
 </body>
