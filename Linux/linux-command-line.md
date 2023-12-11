@@ -103,3 +103,9 @@ Linux Command Line - track down and manage digital resources, test network conne
 * less .profile
 * less /etc/profile
 * cat /etc/passwd
+* ls -a 
+* ls --all 
+* man ls - displays a well-organized reference listing that command`s syntax, usage patters and command line arguments.
+* ip addr `or` ip a
+* ls -lht `or` ls -lh `or` ls -l
+* ls -l /etc
