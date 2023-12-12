@@ -10,6 +10,17 @@ This is going to be a GitHub repository for starting my journey in DevOps ðŸ’»ðŸ
 <h2> Goals and a Learn list: </h2>
 <div>
 
+- [ ] DevOps Foundations:
+  - [ ] The Big Picture
+  - [ ] Core Concepts and Fundamentals
+  - [ ] Test-driven Development
+  - [ ] Continuous Integration and Continuous Delivery
+  - [ ] Security and DevSecOps
+  - [ ] Operational Strategies
+  - [ ] Planning and Implementing a DevOps Strategy
+  - [ ] Getting Started in the Lab Environment
+  - [ ] Work Effectively with Version Control in DevOps
+  - [ ] Validate Your Work with Automated Testing
 - [ ] Linux:
   - [x] ~~Getting Started with Linux~~
   - [ ] Linux Command Line
