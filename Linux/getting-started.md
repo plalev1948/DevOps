@@ -187,6 +187,31 @@ associated with your system's network interfaces.
 
   Keep in mind there is autocomplete for Linux! It will work when there is only one possible matching possibility in the directory.
 
+Navigating the Linux File System:
+
+`pwd` = present work directory
+`cd` = change directory
+`mkdir` = create a directory
+`ls` = list the contents of the parent directory to show the new subdirectory
+`nono` = text editor
+`touch` = quick way to create empty files with unused names. Note: Using `touch` on an existing file, by the way, will simply update the datetime stamp of the file, which can be useful for some administrative purposes.
+`cp` = create copy. Note: create a copy of the file1 to a new directory
+`globing` = a way of spreading an action across a global target. Add every file that starts with file, no matter the lenght of the name
+`rm file?` = remove all files that start with file and have one digit after the word
+`rm file*` = remove all files
+`mv` = move files from parent directory to current directory
+`rm *` = remove all files from the current directory
+`cd..` = go one directory back
+`rmdir` = remove a directory
+
+example of a command: cd home/ubuntu/scripts
+example `nono`: type Hello, press `Ctrl` + `X` to save and then `Y` to exit
+example `globing`: cp file* newdata/
+example `mv ../file`
+example `rmdir newdata/` = remove the newdata directory
+
+Note: Deleted files cannot be restored.
+
 </div>
 </body>
 </html>

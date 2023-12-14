@@ -109,3 +109,4 @@ Linux Command Line - track down and manage digital resources, test network conne
 * ip addr `or` ip a
 * ls -lht `or` ls -lh `or` ls -l
 * ls -l /etc
+* nano filel - create a new directory with the text editor `nano`
