@@ -212,6 +212,16 @@ example `rmdir newdata/` = remove the newdata directory
 
 Note: Deleted files cannot be restored.
 
+Searching the Linux File System:
+
+`locate` = quickest and easiest way to find files in Linux. For example you don't remember where the configuration file is and you just type `locate adduser`
+`sudo updatedb` = if you are looking for files that have been added quite recently. This will get you going when you need to find a file
+
+Rather than just printing just the text directly to the screen, however, it can also search and, if desired, manipulate the contents of a file by sending it through what's called a `pipe`. Multiple text manipulation tools can then be invoked to filter the streaming text.
+
+example: we will use `cat` to read the group file that contains information about system groups and that lives in the `etc` directory.
+$ cat /etc/group | grep ubuntu
+
 </div>
 </body>
 </html>
