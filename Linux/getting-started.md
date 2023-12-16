@@ -222,6 +222,25 @@ Rather than just printing just the text directly to the screen, however, it can 
 example: we will use `cat` to read the group file that contains information about system groups and that lives in the `etc` directory.
 $ cat /etc/group | grep ubuntu
 
+Many files will regularly generate thousands or even millions of text messages that are written to log files so that later you can revisit critical events. To manage the problem of working with all this data, Bash comes with a full set of text manipulation tools for reading.
+
+`cat /var/log/syslog`
+
+`cat /etc/group | grep ubuntu >> newfile` = rather than just printing the output to the screen, we could use this command to populate a file. The information is going to be included in the new file `newfile`.
+`cat /etc/group | grep ubuntu > newfile` = for the same command as above we could use an existing file, instead of creating a new one. This is done by only adding one arrow `>`.
+`head` = this will print by default only the first 10 lines of a file
+example: `head /etc/group`
+`tail` = this will print the last 10 lines of a file
+example: `tail /etc/group`
+`cut -d: -f3` = pull out one field of data from each line and process them all together. `d3` means to use every column as a field limiter or in other words to recognize the beggining and ending of each field. `-f3` is our way of saying that we are insterested of processing the contents of the 3rd field of each line.
+`cut -d: -f3 /etc/group | sort -n` = sort the numbers in a descending order
+`cut -d: -f3 /etc/group | sort -rn` = sort the numbers in a increasing order
+`wc newfile` = to see how much words a file was. `wc` stands for word count
+
+standard input -> `stdin` -> 0 -> the input comes from the keyboard -> example: `mysql -u root -p < mydatabase.sql` this example will open the database as root user, the right arrow `<` will tell the system where to find the file
+standard output -> `stdout` -> 1
+standard error -> `stderr` -> 2
+
 </div>
 </body>
 </html>
