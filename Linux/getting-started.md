@@ -238,8 +238,9 @@ example: `tail /etc/group`
 `wc newfile` = to see how much words a file was. `wc` stands for word count
 
 standard input -> `stdin` -> 0 -> the input comes from the keyboard -> example: `mysql -u root -p < mydatabase.sql` this example will open the database as root user, the right arrow `<` will tell the system where to find the file
-standard output -> `stdout` -> 1
-standard error -> `stderr` -> 2
+standard output -> `stdout` -> 1 -> example: `echo` Hello -> result: Hello ; `echo "Hello" >> myFile.txt` ; cat myfile.txt
+standard error -> `stderr` -> 2 -> wget pluralsight.comm -> wget pluralsight.comm 2> errorfile.txt -> cat errorfile.txt  Note: the number `2` is a number for designated error.
+
 
 </div>
 </body>
