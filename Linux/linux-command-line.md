@@ -86,30 +86,44 @@ Working with Linux Software Repositories and package managers:
 
 Linux Command Line - track down and manage digital resources, test network connectivity, build scripts to improve work efficiency and bash scripting:
 
-* sudo apt update - use the following command to update the package lists to get information on the newest versions of packages and their dependencies:
-* sudo apt upgrade - you can upgrade the installed packages to their latest versions using the following command
-* sudo apt full-upgrade - you can also perform a full system upgrade, which includes installing new dependencies if required;
-* sudo apt list --upgradable - you can check if your system is up to date by running this command;
-* sudo apt install info - install info
-* info - offers a menu of major topics, including a list of installed programs
-* cd /usr/share/doc/wget - open the documentation
-* man wget - this command will display a well-organized reference listing that command`s syntax, usage patters and command line arguments.
-* wget - a simple program that you run with the address of a web page or file that you would like to download to your current directory
-* wget --help - displays different commands and helps the user with the usage
-* wget --help | less - to pipe this output to the less text reader
-* type wget - this can tell you how a specifiedword would be interpreted by Bash. For example, running type of wget, for instance, tells us that it's a binary command that actually exists in the usr/bin directory.
-* ls -a - lists all the files in the directory
-* less .bashrc - shows what the file is consisted of
-* less .profile
-* less /etc/profile
-* cat /etc/passwd
-* ls -a 
-* ls --all 
-* man ls - displays a well-organized reference listing that command`s syntax, usage patters and command line arguments.
-* ip addr `or` ip a
-* ls -lht `or` ls -lh `or` ls -l
-* ls -l /etc
-* nano filel - create a new directory with the text editor `nano`
-* locate adduser
-* head /etc/group
-* tail /etc/group
+* `sudo apt update` - use the following command to update the package lists to get information on the newest versions of packages and their dependencies:
+* `sudo apt upgrade` - you can upgrade the installed packages to their latest versions using the following command
+* `sudo apt full-upgrade` - you can also perform a full system upgrade, which includes installing new dependencies if required;
+* `sudo apt list` --upgradable - you can check if your system is up to date by running this command;
+* `sudo apt install info` - install info
+* `info` - offers a menu of major topics, including a list of installed programs
+* `cd /usr/share/doc/wget` - open the documentation
+* `man wget` - this command will display a well-organized reference listing that command`s syntax, usage patters and command line arguments.
+* `wget` - a simple program that you run with the address of a web page or file that you would like to download to your current directory
+* `wget --help` - displays different commands and helps the user with the usage
+* `wget --help | less` - to pipe this output to the less text reader
+* `type wget` - this can tell you how a specifiedword would be interpreted by Bash. For example, running type of wget, for instance, tells us that it's a binary command that actually exists in the usr/bin directory.
+* `ls -a` - lists all the files in the directory
+* `less .bashrc` - shows what the file is consisted of
+* `less .profile`
+* `less /etc/profile`
+* `cat /etc/passwd`
+* `ls -a` 
+* `ls --all` 
+* `man ls` - displays a well-organized reference listing that command`s syntax, usage patters and command line arguments.
+* `ip addr` "or" `ip a`
+* `ls -lht` "or" `ls -lh` "or" `ls -l`
+* `ls -l /etc`
+* `nano filel` - create a new directory with the text editor `nano`
+* `locate adduser`
+* `head /etc/group`
+* `tail /etc/group`
+* `pwd` = present work directory
+* `cd` = change directory
+* `mkdir` = create a directory
+* `ls` = list the contents of the parent directory to show the new subdirectory
+* `nono` = text editor
+* `touch` = quick way to create empty files with unused names. Note: Using `touch` on an existing file, by the way, will simply update the datetime stamp of the file, which can be useful for some administrative purposes.
+* `cp` = create copy. Note: create a copy of the file1 to a new directory
+* `globing` = a way of spreading an action across a global target. Add every file that starts with file, no matter the lenght of the name
+* `rm file?` = remove all files that start with file and have one digit after the word
+* `rm file*` = remove all files
+* `mv` = move files from parent directory to current directory
+* `rm *` = remove all files from the current directory
+* `cd..` = go one directory back
+* `rmdir` = remove a directory
