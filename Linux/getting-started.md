@@ -241,6 +241,20 @@ $ cat /etc/group | grep ubuntu
 * standard output -> `stdout` -> 1 -> example: `echo` Hello -> result: Hello ; `echo "Hello" >> myFile.txt` ; cat myfile.txt
 * standard error -> `stderr` -> 2 -> wget pluralsight.comm -> wget pluralsight.comm 2> errorfile.txt -> cat errorfile.txt  Note: the number `2` is a number for designated error.
 
+Working with Archives:
+
+* The most common thing for compresion is `tar` when working with archives. The `.tar` ending tell us that it's an archive and the `.gz` tells us that it's also compresed gzip algorithm.
+
+* `tar xzf "name of the archive"`= to unpack an archive
+* `tar czf newarchive.tar.gz[name of the archive] wordpress/[names of the files]` = to repack the files or any set of files we can use the command we perform the previous process in reverse
+* `ls -l` = shows us the archive and it tells us that the file size is a little different from the original
+* `tar cf largearchive.tar var`
+* `gzip largearchive.tar`
+
+To work with zip files, we have to know how to work with unzip.
+* `unzip akismet.4.1.zip[name of the zip file]`
+* `ls akismet[name of the zip file]`
+* `zip newname.zip *` = you can create a new zip archive using the new "zip" command
 
 </div>
 </body>
