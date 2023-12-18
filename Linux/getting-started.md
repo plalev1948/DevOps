@@ -174,7 +174,7 @@ Example of a search using `/`:
 
 The same result can be achieved, if I type:
 
-`info wget examples simple`
+* `info wget examples simple`
 
 The Linux Terminal: the Linux shell is not quite the same thing as the Linux Terminal. The command `ls -a` lists all the files in the directory. The dot at the beginning of the file name indicates that it's hidden, meaning it won't be displayed when you run a plain old `ls` command without the a argument.
 
@@ -189,57 +189,57 @@ associated with your system's network interfaces.
 
 Navigating the Linux File System:
 
-`pwd` = present work directory
-`cd` = change directory
-`mkdir` = create a directory
-`ls` = list the contents of the parent directory to show the new subdirectory
-`nono` = text editor
-`touch` = quick way to create empty files with unused names. Note: Using `touch` on an existing file, by the way, will simply update the datetime stamp of the file, which can be useful for some administrative purposes.
-`cp` = create copy. Note: create a copy of the file1 to a new directory
-`globing` = a way of spreading an action across a global target. Add every file that starts with file, no matter the lenght of the name
-`rm file?` = remove all files that start with file and have one digit after the word
-`rm file*` = remove all files
-`mv` = move files from parent directory to current directory
-`rm *` = remove all files from the current directory
-`cd..` = go one directory back
-`rmdir` = remove a directory
+* `pwd` = present work directory
+* `cd` = change directory
+* `mkdir` = create a directory
+* `ls` = list the contents of the parent directory to show the new subdirectory
+* `nono` = text editor
+* `touch` = quick way to create empty files with unused names. Note: Using `touch` on an existing file, by the way, will simply update the datetime stamp of the file, which can be useful for some administrative purposes.
+* `cp` = create copy. Note: create a copy of the file1 to a new directory
+* `globing` = a way of spreading an action across a global target. Add every file that starts with file, no matter the lenght of the name
+* `rm file?` = remove all files that start with file and have one digit after the word
+* `rm file*` = remove all files
+* `mv` = move files from parent directory to current directory
+* `rm *` = remove all files from the current directory
+* `cd..` = go one directory back
+* `rmdir` = remove a directory
 
-example of a command: cd home/ubuntu/scripts
-example `nono`: type Hello, press `Ctrl` + `X` to save and then `Y` to exit
-example `globing`: cp file* newdata/
-example `mv ../file`
-example `rmdir newdata/` = remove the newdata directory
+* example of a command: cd home/ubuntu/scripts
+* example `nono`: type Hello, press `Ctrl` + `X` to save and then `Y` to exit
+* example `globing`: cp file* newdata/
+* example `mv ../file`
+* example `rmdir newdata/` = remove the newdata directory
 
 Note: Deleted files cannot be restored.
 
 Searching the Linux File System:
 
-`locate` = quickest and easiest way to find files in Linux. For example you don't remember where the configuration file is and you just type `locate adduser`
-`sudo updatedb` = if you are looking for files that have been added quite recently. This will get you going when you need to find a file
+* `locate` = quickest and easiest way to find files in Linux. For example you don't remember where the configuration file is and you just type `locate adduser`
+* `sudo updatedb` = if you are looking for files that have been added quite recently. This will get you going when you need to find a file
 
-Rather than just printing just the text directly to the screen, however, it can also search and, if desired, manipulate the contents of a file by sending it through what's called a `pipe`. Multiple text manipulation tools can then be invoked to filter the streaming text.
+* Rather than just printing just the text directly to the screen, however, it can also search and, if desired, manipulate the contents of a file by sending it through what's called a `pipe`. Multiple text manipulation tools can then be invoked to filter the streaming text.
 
-example: we will use `cat` to read the group file that contains information about system groups and that lives in the `etc` directory.
+* example: we will use `cat` to read the group file that contains information about system groups and that lives in the `etc` directory.
 $ cat /etc/group | grep ubuntu
 
-Many files will regularly generate thousands or even millions of text messages that are written to log files so that later you can revisit critical events. To manage the problem of working with all this data, Bash comes with a full set of text manipulation tools for reading.
+* Many files will regularly generate thousands or even millions of text messages that are written to log files so that later you can revisit critical events. To manage the problem of working with all this data, Bash comes with a full set of text manipulation tools for reading.
 
-`cat /var/log/syslog`
+* `cat /var/log/syslog`
 
-`cat /etc/group | grep ubuntu >> newfile` = rather than just printing the output to the screen, we could use this command to populate a file. The information is going to be included in the new file `newfile`.
-`cat /etc/group | grep ubuntu > newfile` = for the same command as above we could use an existing file, instead of creating a new one. This is done by only adding one arrow `>`.
-`head` = this will print by default only the first 10 lines of a file
-example: `head /etc/group`
-`tail` = this will print the last 10 lines of a file
-example: `tail /etc/group`
-`cut -d: -f3` = pull out one field of data from each line and process them all together. `d3` means to use every column as a field limiter or in other words to recognize the beggining and ending of each field. `-f3` is our way of saying that we are insterested of processing the contents of the 3rd field of each line.
-`cut -d: -f3 /etc/group | sort -n` = sort the numbers in a descending order
-`cut -d: -f3 /etc/group | sort -rn` = sort the numbers in a increasing order
-`wc newfile` = to see how much words a file was. `wc` stands for word count
+* `cat /etc/group | grep ubuntu >> newfile` = rather than just printing the output to the screen, we could use this command to populate a file. The information is going to be included in the new file `newfile`.
+* `cat /etc/group | grep ubuntu > newfile` = for the same command as above we could use an existing file, instead of creating a new one. This is done by only adding one arrow `>`.
+* `head` = this will print by default only the first 10 lines of a file
+* example: `head /etc/group`
+* `tail` = this will print the last 10 lines of a file
+* example: `tail /etc/group`
+* `cut -d: -f3` = pull out one field of data from each line and process them all together. `d3` means to use every column as a field limiter or in other words to recognize the beggining and ending of each field. `-f3` is our way of saying that we are insterested of processing the contents of the 3rd field of each line.
+* `cut -d: -f3 /etc/group | sort -n` = sort the numbers in a descending order
+* `cut -d: -f3 /etc/group | sort -rn` = sort the numbers in a increasing order
+* `wc newfile` = to see how much words a file was. `wc` stands for word count
 
-standard input -> `stdin` -> 0 -> the input comes from the keyboard -> example: `mysql -u root -p < mydatabase.sql` this example will open the database as root user, the right arrow `<` will tell the system where to find the file
-standard output -> `stdout` -> 1 -> example: `echo` Hello -> result: Hello ; `echo "Hello" >> myFile.txt` ; cat myfile.txt
-standard error -> `stderr` -> 2 -> wget pluralsight.comm -> wget pluralsight.comm 2> errorfile.txt -> cat errorfile.txt  Note: the number `2` is a number for designated error.
+* standard input -> `stdin` -> 0 -> the input comes from the keyboard -> example: `mysql -u root -p < mydatabase.sql` this example will open the database as root user, the right arrow `<` will tell the system where to find the file
+* standard output -> `stdout` -> 1 -> example: `echo` Hello -> result: Hello ; `echo "Hello" >> myFile.txt` ; cat myfile.txt
+* standard error -> `stderr` -> 2 -> wget pluralsight.comm -> wget pluralsight.comm 2> errorfile.txt -> cat errorfile.txt  Note: the number `2` is a number for designated error.
 
 
 </div>
