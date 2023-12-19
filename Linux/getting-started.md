@@ -256,6 +256,23 @@ To work with zip files, we have to know how to work with unzip.
 * `ls akismet[name of the zip file]`
 * `zip newname.zip *` = you can create a new zip archive using the new "zip" command
 
+Linux Kernel Modules and Peripherals:
+Troubleshooting Peripherals:
+* Step One - `Is the device recognized by the system?`
+* Step Two - `Is the appropriate kernel module loaded?`
+* `lsusb` = using the command line, with this command we can see what devices does Linux see
+* `lspci` = this will show the devices connected through pci slots
+* `sudo lshw` = this will gives us the whole hardware range in one output
+* `sudo lshw > lshw-output` = the same command but redirected to a text file that can be read and after that type `less lshw-output`
+* `ls /lib/modules/` = the software files that make up Kernel modules are usually kept in the `lib/modules/` directory
+* `uname -r` = the module you want to use will depend on the Linux Kernel version you are running
+* "ls /lib/modules` uname -r`"
+* `lsmod | grep sound` = list the modules we are currently using, but this is modified to search only for the sound module
+* `modprobe soundcore[module name]` = this is used, if I need to load the module
+
+The sounds files in Linux end with the 
+
+
 </div>
 </body>
 </html>
