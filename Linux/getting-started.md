@@ -270,8 +270,43 @@ Troubleshooting Peripherals:
 * `lsmod | grep sound` = list the modules we are currently using, but this is modified to search only for the sound module
 * `modprobe soundcore[module name]` = this is used, if I need to load the module
 
-The sounds files in Linux end with the 
+The sounds files in Linux end with the `.ko` file extension.
 
+Linux Network Connectivity:
+
+<ul>
+  <br>This includes:
+  <li>Analyzing network connectivity</li>
+  <li>Confirguring DNS</li>
+  <li>SSH remote sessions</li>
+</ul>
+
+Network Connectivity - building an effective networking system requires some networking skills.
+* `ip route show` = to see if you got access to a network router, one sort or another
+* `sudo dhclient` = to see, if there is a DHCP server on the network; DHCP = Dynamic Host Configuration Protocol
+* `ip addr` = to see my own ip address
+
+The difference between IPv4 and IPv6 addresses is that IPv6 addresses are drawn from a theoretical pool of numbers that exponentially larger than IPv4. The reason is simple: IPv4 addresses are made up 4 IP bit numbers.
+
+<span> **IPv4** </span>
+<br> 
+example -> 256.256.256.256 = 4 294 967 296 (2^32) available combinations 
+example address: 192.168.1.3
+
+<h2> Network Address Translation (NAT) ranges </h2>
+
+* from `10.0.0.0` to `10.255.255.255`
+* from `172.16.0.0` to `172.31.255.255`
+* from `192.168.0.0` to `192.168.255.255`
+
+<span> **IPv6** </span> <br>
+example address: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+* `route` = similar output as `ip route show`
+* `ifconfig` = gives the same output as `ip addr`
+* `netstat -i` = for more detailed data on network connection and configurations we can use this program
+* `netstat -l` = checks and displays all the open and listening ports. This is an easy way to check, if there are any unnecessary and insecure entry points
+* `ss -i` = this command can tell you all kinds of good and bad news about your networking interfaces
 
 </div>
 </body>
