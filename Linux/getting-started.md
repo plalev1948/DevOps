@@ -308,6 +308,17 @@ example address: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
 * `netstat -l` = checks and displays all the open and listening ports. This is an easy way to check, if there are any unnecessary and insecure entry points
 * `ss -i` = this command can tell you all kinds of good and bad news about your networking interfaces
 
+Domain Name System (DNS) Configuration:
+The DNS system was created to map numeric ip addresses like `52.33.197.135` like `Pluralsight.com`. For that to work there have to be databases accessible to every network that contains an up to date index of names. The services that maintain these databases are called DNS servers. You can easily tell, whether your computer has access to a DNS server by pointing a web browser to a DNS name of a website like `bootstrap-it.com`. If you can successfully load the page, than this means that your browser received the correct translation of the name you typed in to it's actual public address.
+
+* `host` = you can also review the status of your DNS server using the command
+* `ping 8.8.8.8` = you can try pinging a known ip address. `Ping` is a simple command that repeatedly sends short messages to a network address with the request the message be echoed back, letting us know that the address is live.
+
+If pinging an ip address works, but pinging associated DNS servers doesn't, it means something is wrong with our DNS server. On some distributions you manage your DNS settings from the `cat /etc/resolv.config` file.
+
+* `sudo nano /etc/hosts` = there we can type an ip address with a website name, save the changes and the users of this local machine will be redirected to this ip address every time when they type the name of the site, even if there is a real website out there.
+
+
 </div>
 </body>
 </html>
