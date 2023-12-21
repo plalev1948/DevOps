@@ -318,6 +318,37 @@ If pinging an ip address works, but pinging associated DNS servers doesn't, it m
 
 * `sudo nano /etc/hosts` = there we can type an ip address with a website name, save the changes and the users of this local machine will be redirected to this ip address every time when they type the name of the site, even if there is a real website out there.
 
+<h2> Remote Connections and SSH: </h2>
+
+<span> The open SSH package was designed to solve two big problems. It is a popular and reliable protocol.</span> 
+
+Remote Is The New Local:
+* Accessing headless servers
+* Accessing virtual machines
+* Accessing workloads on distant servers
+
+Server:
+* apt install openssh-server
+* or: dnf install openssh-server
+
+Client:
+* apt install openssh-client
+* or: dnf install openssh-clients
+
+Both the server and client iterations are controlled by configurations by the `/etc/ssh` directory. We will use and edit the `sshd_config` file to manage the system's host behavior and `ssh_config` controls the way your system will log you in as a client on remote hosts.
+
+* cd `/etc/ssh`
+* `sudo nano sshd_config`
+
+By default SSH sessions use port 22.
+
+* `ssh ubuntu@10.0.31.131[the name of the user account you want to use]@[the server's remote address]` = to enter a terminal session on the client
+* `exit` = to stop the session
+* `ssh -p 2222 ubuntu` = to change the port; note: you may need to specify the port using `-p`
+* `ssh -i /home/myusername/mykeyfile.pem ubuntu@10.0.31.131` = if I run Linux instances on Amazon's EC2 platform. I can point to the myusername file to the client's local machine using `-i`.
+* ` scp update-local.sh[the name of the local file that I want to send] ubuntu@10.0.31.131[username]@[ip address of the remote host]:/home/ubuntu[the location of the saved file]` = this command is used to securely copy files between machines
+
+note: `scp` = secure copy
 
 </div>
 </body>
