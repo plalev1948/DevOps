@@ -350,6 +350,13 @@ By default SSH sessions use port 22.
 
 note: `scp` = secure copy
 
+Linux Scripting:
+
+* `nano myscripts.sh` = create a script file
+* `chmod +x myscript.sh` = when using the change mode command, we will make the file executable by adding the value x
+* `./myscript.sh` = to run the script in the file
+
+
 </div>
 </body>
 </html>
