@@ -23,8 +23,9 @@ This is going to be a GitHub repository for starting my journey in DevOps ðŸ’»ðŸ
   - [ ] Validate Your Work with Automated Testing
 - [ ] Linux:
   - [x] ~~Getting Started with Linux~~
-  - [ ] Linux Command Line
-  - [ ] Linux System Administration
+  - [x] ~~Linux Command Line~~
+  - [x] ~~Linux System Administration~~
+  - [ ] Linux Scripting
 - [ ] Git:
   - [ ] Getting Started with Git
 - [ ] Networking:

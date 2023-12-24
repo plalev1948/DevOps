@@ -350,6 +350,22 @@ By default SSH sessions use port 22.
 
 note: `scp` = secure copy
 
+Linux Scripting:
+
+* `nano myscripts.sh` = create a script file
+* `chmod +x myscript.sh` = when using the change mode command, we will make the file executable by adding the value x
+* `./myscript.sh` = to run the script in the file
+
+Working with Loops and Flow Controls:
+
+* `fi` = you close an `if` statement with a `fi`
+* `esac` = you close an `case` statement with a `esac`
+
+The difference between `builtins` and `external commands`. A `builtin` is a program that's build in to the Bash scripting environment. Calling a builtin from within your script will often use up less system overhead and create fewer subprocesses. Somethimes. the problem you're addressing can be better solved through an external program, so you might choose to reach outside the native Bash environment. Running `man builtins` from the command line will probably get you all the commands you need.
+
+* `man builtins` = starts a list of commands you need to work with `builtins`
+
+
 </div>
 </body>
 </html>
