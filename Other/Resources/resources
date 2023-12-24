@@ -8,4 +8,5 @@ https://bootstrap-it.com/linux-start/
 https://bootstrap-it.com/linux-cli
 
 Using Linux Help Resources:
-
+* `man builtins` = starts a list of commands
+* `info`
