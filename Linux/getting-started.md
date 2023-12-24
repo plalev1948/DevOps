@@ -390,6 +390,9 @@ The difference between `builtins` and `external commands`. A `builtin` is a prog
 * Docker containers
 
 
+<h3> Monitoring System Resources </h3>
+
+We will take a look at `System performance metrics` like `RAM`, `Storage`, `CPU` and `Bandwith`. The 2 main goals here are:
 
 </div>
 </body>
