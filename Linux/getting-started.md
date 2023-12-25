@@ -78,15 +78,21 @@ Distributions are build into families. The best know families are Debian (Ubuntu
 
 ## Linux Runlevels <a name="fifthnote"></a>
 
-  <ul>
-    <li>0 - system halt - this means "applying code `0` will shut the machine off"</li>
-    <li>1 - single-user (rescue) mode - allows to work through on a problem/issue with the stability that no other user will log on without your knowledge</li>
-    <li>3 - multi-user mode without GUI - provides only terminal connections</li>
-    <li>5 - multi-user mode with GUI - standard desktop machine. Multi-user means that more than 1 user can login at once</li>
-    <li>6 - reboot</li>
-  </ul>
+<ul>
+  <li>0 - system halt - this means "applying code `0` will shut the machine off"</li>
+  <li>1 - single-user (rescue) mode - allows to work through on a problem/issue with the stability that no other user will log on without your knowledge</li>
+  <li>3 - multi-user mode without GUI - provides only terminal connections</li>
+  <li>5 - multi-user mode with GUI - standard desktop machine. Multi-user means that more than 1 user can login at once</li>
+  <li>6 - reboot</li>
+</ul>
 
 Notes:
+
+Linux is probably going to be the infrastucture powering things under the hood. It has:
+* most web and app servers
+* most CI/CD deployments
+* Docker virtualizes Linux host kernel resources
+* All AWS EC2 instances
 
 LMV = Logical Volume Management
 
@@ -350,7 +356,7 @@ By default SSH sessions use port 22.
 
 note: `scp` = secure copy
 
-Linux Scripting:
+<h2> Linux Scripting: </h2> 
 
 * `nano myscripts.sh` = create a script file
 * `chmod +x myscript.sh` = when using the change mode command, we will make the file executable by adding the value x
@@ -365,6 +371,28 @@ The difference between `builtins` and `external commands`. A `builtin` is a prog
 
 * `man builtins` = starts a list of commands you need to work with `builtins`
 
+<h2> Linux System Administration: </h2>
+
+
+* System permormance optimization
+    * Troubleshooting problems
+    * Preventing problems
+    * Understanding capacity
+    * Searching log data
+    * Controlling process lifecycles
+* Account authentication - Passwords
+* User and groups
+* Security
+  * Permissions
+  * Software updates
+  * Network Port Audits
+  * Encryption
+* Docker containers
+
+
+<h3> Monitoring System Resources </h3>
+
+We will take a look at `System performance metrics` like `RAM`, `Storage`, `CPU` and `Bandwith`. The 2 main goals here are:
 
 </div>
 </body>
