@@ -393,6 +393,21 @@ The difference between `builtins` and `external commands`. A `builtin` is a prog
 <h3> Monitoring System Resources </h3>
 
 We will take a look at `System performance metrics` like `RAM`, `Storage`, `CPU` and `Bandwith`. The 2 main goals here are:
+* Understand capacity usage
+* Identify (and terminate) rogue processes
+
+
+* `cd /proc` = key system information is kept in the directory here. The files here are not persistent, but are created dynamically with each system boot and in response to system events.
+* `less meminfo` = The `meminfo` file, for instance, contains information about the capacity and usage levels of your system memory. The output shows how much physical memory I've got and how much of it is not currently being used.
+* `less cpuinfo` = tells me everything about I could want to know about the capacity and specifications of the number of CPU cores. Those files are mostly usefull for understanding the system specs.
+* `top` = to view how the hardware is actually being utilized by the system right now, you'll want to run `top`. `Top` provides a single automatically updating screen full of data on those processes using up the highest percentages of CPU and memory resorces.
+* `free` = to see how close to the bottom of the barrel you are, run `free`. The key number you are looking for is "available". Adding `-h` to free will display results in megabytes and gigabytes rather than 7 and 8-digit byte counts. 
+* example: `free -h`
+* `df` = to see the state of all these storage devices currently mounted to your system, run `df`. You can use the `-t` argument to filter for just "ext4" formatted partitions, which is the format they are using.
+* example: `df -t ext4` or `df -ht ext4` to get the partition sizes in himan-readable numbers
+
+
+
 
 </div>
 </body>
