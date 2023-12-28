@@ -409,7 +409,7 @@ We will take a look at `System performance metrics` like `RAM`, `Storage`, `CPU`
 * `sudo apt install iftop` = command to install the command
 * `sudo iftop -i eth0[active interface]` = after running this command you will see source and target addresses associated with requests in the top section of the screen and upload and download statistics below
 
-<h2> Managing System Processes: </h2>
+<h3> Managing System Processes: </h3>
 
 In this section we are going to have the commands for the following events:
 * Monitor process event data
@@ -431,6 +431,62 @@ The difference between the commands `kill` and `killall` is that `kill` will onl
 
 `sudo systemctl status apache2` = you can check on current state of a process using system ctl using `systemctl status`. This example shows you that the Apache HTTP server software is installed, active and enabled. Enabled means it's set to automatically load each time the computer boots. If we didn't want it to load on boot, I could run `systemctl disable` and after checking the status once again we will make sure it is indeed disabled.
 `sudo systemctl start apache` = you can use systemctl to manuall start or stop a process
+
+<h3> Managing Process Priorities: </h3>
+
+To manage a couple of applications and you want them to "play" together and not consume so much memory you can use `nice`.
+
+* `yes > /dev/null &`
+* `nice -19 yes > /dev/null &` = we will prefix the command with a value of "19". This means that the process will act very nicely and reduces resource demands in favor of any competing processes.
+* `top` = view how the hardware is actually being utilized by the system
+
+A `nice` process might take longer to complete. "19", by the way, is the maximum niceness that's possible, "-20", shown as "--20" is as nasty as it gets and 0 is neutral.
+If you would like to change the value of a running process you can use `renice`.
+
+example: `renice 15 -p 80[process ID]`
+
+<h3> Working with Users and Groups: </h3>
+
+* Account data - system files where user and group data is stored
+* Access control
+* account activity data
+* Managing accounts
+* Managing groups
+
+Admin Powers: Best Practices
+* Avoid using the root account
+* Create unique accounts for each user
+* Assign only necessary authority to each user
+* Use admin power only via sudo
+
+* `less /etc/shadow` = the file contains encrypted versions of all user passwords. With this command the user will be turned back, he doesn't have the authority.
+* `sudo less /etc/shadow` = the file is going to be opened
+* `less /etc/passwd` = this file holds user data
+
+example: `ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash` . Meaning of every symbol:
+ubuntu = this field has the user's name
+x = indicates the existance of password in the shadow file
+1000:1000 = user ID and group ID numbers
+/home/ubuntu: = the file system address is the location of the user's home directory
+/bin/bash = default shell
+
+* `less /etc/group` = this performs a similar function for groups containing the group name and group ID
+* `id ubuntu` = this command returns my user and group IDs, but also displays the groups of which I'm a member, including sudo
+* `who` = this command tells us, which users are currently logged in, when their sessions began and where they came from
+* `w` = this command tells us not only who is currently logged in, but what he is also doing as well
+* `last | less` = gives you every login since the beginning of the month
+
+How to create and delete users and groups.
+* `sudo useradd -m` = to create a new user and the `-m` part tells Linux to create a new directory in the home tree with the user's name
+* `ls -a` = so we can see the hidden files
+* `/etc/skel` = this is known as a skeleton directory, because it contains files or directories you'd like to form the skeleton or base of the `home` directory of new users as their new accounts are created.
+* `sudo passwd pavel.test` = to create a password for a new user
+* `sudo mkdir /var/secret` = create a new directory
+* `sudo groupadd secter-group` = create a new group
+* `sudo chown :secret-group /var/secret/` = change ownership properties of the "/var/secret" directory
+* `sudo usermod -a -G secret-gorup[group name] pavel.test[username]` = "-a" means add and "-G" means to an existing group
+* `sudo chmod g+w /var/secret/` = edit the permissions for the secret directory to allow group members to edit files; `g+w` means that we will add write permissions for members of the directory's group
+
 
 
 </div>
