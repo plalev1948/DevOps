@@ -453,6 +453,42 @@ example: `renice 15 -p 80[process ID]`
 * Managing accounts
 * Managing groups
 
+Admin Powers: Best Practices
+* Avoid using the root account
+* Create unique accounts for each user
+* Assign only necessary authority to each user
+* Use admin power only via sudo
+
+* `less /etc/shadow` = the file contains encrypted versions of all user passwords. With this command the user will be turned back, he doesn't have the authority.
+* `sudo less /etc/shadow` = the file is going to be opened
+* `less /etc/passwd` = this file holds user data
+
+example: `ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash` . Meaning of every symbol:
+ubuntu = this field has the user's name
+x = indicates the existance of password in the shadow file
+1000:1000 = user ID and group ID numbers
+/home/ubuntu: = the file system address is the location of the user's home directory
+/bin/bash = default shell
+
+* `less /etc/group` = this performs a similar function for groups containing the group name and group ID
+* `id ubuntu` = this command returns my user and group IDs, but also displays the groups of which I'm a member, including sudo
+* `who` = this command tells us, which users are currently logged in, when their sessions began and where they came from
+* `w` = this command tells us not only who is currently logged in, but what he is also doing as well
+* `last | less` = gives you every login since the beginning of the month
+
+How to create and delete users and groups.
+* `sudo useradd -m` = to create a new user and the `-m` part tells Linux to create a new directory in the home tree with the user's name
+* `ls -a` = so we can see the hidden files
+* `/etc/skel` = this is known as a skeleton directory, because it contains files or directories you'd like to form the skeleton or base of the `home` directory of new users as their new accounts are created.
+* `sudo passwd pavel.test` = to create a password for a new user
+* `sudo mkdir /var/secret` = create a new directory
+* `sudo groupadd secter-group` = create a new group
+* `sudo chown :secret-group /var/secret/` = change ownership properties of the "/var/secret" directory
+* `sudo usermod -a -G secret-gorup[group name] pavel.test[username]` = "-a" means add and "-G" means to an existing group
+* `sudo chmod g+w /var/secret/` = edit the permissions for the secret directory to allow group members to edit files; `g+w` means that we will add write permissions for members of the directory's group
+
+
+
 </div>
 </body>
 </html>
