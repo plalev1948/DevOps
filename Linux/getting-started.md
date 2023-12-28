@@ -409,7 +409,7 @@ We will take a look at `System performance metrics` like `RAM`, `Storage`, `CPU`
 * `sudo apt install iftop` = command to install the command
 * `sudo iftop -i eth0[active interface]` = after running this command you will see source and target addresses associated with requests in the top section of the screen and upload and download statistics below
 
-<h2> Managing System Processes: </h2>
+<h3> Managing System Processes: </h3>
 
 In this section we are going to have the commands for the following events:
 * Monitor process event data
@@ -431,6 +431,19 @@ The difference between the commands `kill` and `killall` is that `kill` will onl
 
 `sudo systemctl status apache2` = you can check on current state of a process using system ctl using `systemctl status`. This example shows you that the Apache HTTP server software is installed, active and enabled. Enabled means it's set to automatically load each time the computer boots. If we didn't want it to load on boot, I could run `systemctl disable` and after checking the status once again we will make sure it is indeed disabled.
 `sudo systemctl start apache` = you can use systemctl to manuall start or stop a process
+
+<h3> Managing Process Priorities: </h3>
+
+To manage a couple of applications and you want them to "play" together and not consume so much memory you can use `nice`.
+
+* `yes > /dev/null &`
+* `nice -19 yes > /dev/null &` = we will prefix the command with a value of "19". This means that the process will act very nicely and reduces resource demands in favor of any competing processes.
+* `top` = view how the hardware is actually being utilized by the system
+
+A `nice` process might take longer to complete. "19", by the way, is the maximum niceness that's possible, "-20", shown as "--20" is as nasty as it gets and 0 is neutral.
+If you would like to change the value of a running process you can use `renice`.
+
+example: `renice 15 -p 80`
 
 
 </div>
