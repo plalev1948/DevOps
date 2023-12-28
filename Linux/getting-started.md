@@ -443,8 +443,15 @@ To manage a couple of applications and you want them to "play" together and not 
 A `nice` process might take longer to complete. "19", by the way, is the maximum niceness that's possible, "-20", shown as "--20" is as nasty as it gets and 0 is neutral.
 If you would like to change the value of a running process you can use `renice`.
 
-example: `renice 15 -p 80`
+example: `renice 15 -p 80[process ID]`
 
+<h3> Working with Users and Groups: </h3>
+
+* Account data - system files where user and group data is stored
+* Access control
+* account activity data
+* Managing accounts
+* Managing groups
 
 </div>
 </body>
