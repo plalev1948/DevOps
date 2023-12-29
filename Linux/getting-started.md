@@ -488,6 +488,68 @@ How to create and delete users and groups.
 * `sudo chmod g+w /var/secret/` = edit the permissions for the secret directory to allow group members to edit files; `g+w` means that we will add write permissions for members of the directory's group
 
 
+<h3> Securing Your Linux Server covers: </h3>
+
+* Permissions
+* Software patches
+* managing network ports
+* Data encryption
+
+Applying Object Permissions:
+
+* `cd /var/secret`
+* `ls -l` = `-l` means long version
+* `su pavel.test` = `su` means switch user
+* `touch data.txt` = create a new file
+* `ls -dl` = this will list the attributes not of the contents of the attribute itself
+* `chmod` = change an object's attributes using `chmod`
+* `sudo chown ubuntu[group name]:secret-group /var/secret` = to change the owner of the group
+* `chmod o+x data.txt` = add execute powers for others over data.txt, `o` - stands for others, `+` we are adding a power and `x` to indicate executable
+
+Permissions: Numeric Notation
+Read: r - 4
+Write: w - 2
+Execute: x -1
+
+Full permissions: 4 + 2 + 1 = 7, `7` indicates the highest permissions level possible
+Read/execute: 5, `5` indicates someone with read and execite powers, but not write, as would be worth 5
+Execute: 1, `1` indicates someone with only execute powers
+
+for example: `-rw-rw-r-x` stands for 665 and a secret directory is worth `775`
+
+`chmod 777 data.txt ` = this would add execute powers to the user and group and write to others
+
+<h3> Extending Object Usability: </h3>
+
+By adding a `sticky bit` value to the directory permissions, group members will only be able to delete their own files within the directory, but not files belonging to others.
+
+* `ls -dl`
+* `sudo chmod +t .` = add the sticky bit using this command and then run once again `ls -dl` command
+
+Sometimes you might need access to individual directories or files from more than one location. A very simple solution is to create a symbolic link to the source file in the location where you need it. There's no limit to the number of symlinks you can create, and they behave just like the real thing, because for all intents and purposes they are the real thing.
+
+* `nano /home/ubuntu/scripts/myscript.sh`
+* `sudo ln -s /home/ubuntu/scripts/myscript.sh` = `ln` will create a link, while `-s` specifies that the link should be symbolic; the first location is the original script and it's location and the second one is where you'd like the symbolic link created
+
+
+<h3> Hardening Your Server includes: </h3>
+
+* Reducing vulnerability
+* Patching systems
+* Understanding network ports
+* Managing network ports
+
+Service Access Controls:
+* Service hardening
+* Port control
+* Firewall rules
+
+* `nmap` = powerful and complicated tool
+* `nmap -v -sT localhost` = `-v` for verbose and `-sT`, which will scan using the TCP protocol, followed by `localhost` will scan my own computer for open ports
+* `systemctl disable apache2` = to simply stop and disable my web server using `systemctl`
+* `nmap -v -sT bootstrap-it.com` = using the same command on a remote server
+
+
 
 </div>
 </body>
