@@ -519,6 +519,21 @@ for example: `-rw-rw-r-x` stands for 665 and a secret directory is worth `775`
 
 `chmod 777 data.txt ` = this would add execute powers to the user and group and write to others
 
+<h3> Extending Object Usability: </h3>
+
+By adding a `sticky bit` value to the directory permissions, group members will only be able to delete their own files within the directory, but not files belonging to others.
+
+* `ls -dl`
+* `sudo chmod +t .` = add the sticky bit using this command and then run once again `ls -dl` command
+
+Sometimes you might need access to individual directories or files from more than one location. A very simple solution is to create a symbolic link to the source file in the location where you need it. There's no limit to the number of symlinks you can create, and they behave just like the real thing, because for all intents and purposes they are the real thing.
+
+* `nano /home/ubuntu/scripts/myscript.sh`
+* `sudo ln -s /home/ubuntu/scripts/myscript.sh` = `ln` will create a link, while `-s` specifies that the link should be symbolic; the first location is the original script and it's location and the second one is where you'd like the symbolic link created
+
+
+<h3> Hardening Your Server: </h3>
+
 
 </div>
 </body>
