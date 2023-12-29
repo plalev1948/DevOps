@@ -532,7 +532,23 @@ Sometimes you might need access to individual directories or files from more tha
 * `sudo ln -s /home/ubuntu/scripts/myscript.sh` = `ln` will create a link, while `-s` specifies that the link should be symbolic; the first location is the original script and it's location and the second one is where you'd like the symbolic link created
 
 
-<h3> Hardening Your Server: </h3>
+<h3> Hardening Your Server includes: </h3>
+
+* Reducing vulnerability
+* Patching systems
+* Understanding network ports
+* Managing network ports
+
+Service Access Controls:
+* Service hardening
+* Port control
+* Firewall rules
+
+* `nmap` = powerful and complicated tool
+* `nmap -v -sT localhost` = `-v` for verbose and `-sT`, which will scan using the TCP protocol, followed by `localhost` will scan my own computer for open ports
+* `systemctl disable apache2` = to simply stop and disable my web server using `systemctl`
+* `nmap -v -sT bootstrap-it.com` = using the same command on a remote server
+
 
 
 </div>
