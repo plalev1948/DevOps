@@ -488,6 +488,37 @@ How to create and delete users and groups.
 * `sudo chmod g+w /var/secret/` = edit the permissions for the secret directory to allow group members to edit files; `g+w` means that we will add write permissions for members of the directory's group
 
 
+<h3> Securing Your Linux Server covers: </h3>
+
+* Permissions
+* Software patches
+* managing network ports
+* Data encryption
+
+Applying Object Permissions:
+
+* `cd /var/secret`
+* `ls -l` = `-l` means long version
+* `su pavel.test` = `su` means switch user
+* `touch data.txt` = create a new file
+* `ls -dl` = this will list the attributes not of the contents of the attribute itself
+* `chmod` = change an object's attributes using `chmod`
+* `sudo chown ubuntu[group name]:secret-group /var/secret` = to change the owner of the group
+* `chmod o+x data.txt` = add execute powers for others over data.txt, `o` - stands for others, `+` we are adding a power and `x` to indicate executable
+
+Permissions: Numeric Notation
+Read: r - 4
+Write: w - 2
+Execute: x -1
+
+Full permissions: 4 + 2 + 1 = 7, `7` indicates the highest permissions level possible
+Read/execute: 5, `5` indicates someone with read and execite powers, but not write, as would be worth 5
+Execute: 1, `1` indicates someone with only execute powers
+
+for example: `-rw-rw-r-x` stands for 665 and a secret directory is worth `775`
+
+`chmod 777 data.txt ` = this would add execute powers to the user and group and write to others
+
 
 </div>
 </body>
