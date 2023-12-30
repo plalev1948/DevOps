@@ -550,6 +550,14 @@ Service Access Controls:
 * `nmap -v -sT bootstrap-it.com` = using the same command on a remote server
 
 
+<h3> Data Encryption </h3>
+
+Email Server Elements:
+* Mail transport agent (MTA) - Postfix. Sendmail
+* Mail delivery agent (MDA) - Dovecot
+* Mail user agents (MUA) - Thunderbird
+
+
 
 </div>
 </body>

@@ -127,3 +127,10 @@ Linux Command Line - track down and manage digital resources, test network conne
 * `rm *` = remove all files from the current directory
 * `cd..` = go one directory back
 * `rmdir` = remove a directory
+
+Hardening The Linux Server:
+
+* `nmap` = powerful and complicated tool
+* `nmap -v -sT localhost` = `-v` for verbose and `-sT`, which will scan using the TCP protocol, followed by `localhost` will scan my own computer for open ports
+* `systemctl disable apache2` = to simply stop and disable my web server using `systemctl`
+* `nmap -v -sT bootstrap-it.com` = using the same command on a remote server
