@@ -586,6 +586,20 @@ Linux in a Container World:
   * DevOps
   * Development support
 
+<h3> Understanding the Docker Ecosystem: </h3>
+
+Docker Resources:
+* Image hosting:
+  * Docker Hub
+  * Docker Registry - software package
+* Storage:
+  * Docker Volumes
+  * Third-party solutions
+
+* `docker network ls` = docker containers usually are going to be running clusters, they'll need a way to talk to each other and to outside networks.
+* `docker network create newnet` = you can define and control networks manually from the command line or through various container orchestation tools like Kubernetes system and Amazon's Elastic Container Service (ECS)
+
+
 
 </div>
 </body>
