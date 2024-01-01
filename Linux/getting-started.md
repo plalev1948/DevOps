@@ -557,6 +557,34 @@ Email Server Elements:
 * Mail delivery agent (MDA) - Dovecot
 * Mail user agents (MUA) - Thunderbird
 
+<h3> Working with Docker and Linux Containers: </h3>
+
+Physical Server Model:
+* Operating System
+* Hardware (CPU, RAM, Disk Drives...)
+
+Hypervisor Virtualization:
+* Virtual Client
+  * Hypervisor (hardware emulation layer)
+  * Linux Kernel
+  * Hardware (CPU, RAM, Disk Drives...)
+
+Container Virtualization:
+* Ubuntu, SUSE, RHEL, Debian
+  * Container Management Platform
+  * Linux Kernel
+  * Hardware
+
+Linux in a Container World:
+* Host Administration
+  * Privileges
+  * Kernel Access
+* Container Administration
+  * Application Design
+* The Future of Linux
+  * Microservices
+  * DevOps
+  * Development support
 
 
 </div>
