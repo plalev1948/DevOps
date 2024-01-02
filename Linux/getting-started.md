@@ -557,6 +557,48 @@ Email Server Elements:
 * Mail delivery agent (MDA) - Dovecot
 * Mail user agents (MUA) - Thunderbird
 
+<h3> Working with Docker and Linux Containers: </h3>
+
+Physical Server Model:
+* Operating System
+* Hardware (CPU, RAM, Disk Drives...)
+
+Hypervisor Virtualization:
+* Virtual Client
+  * Hypervisor (hardware emulation layer)
+  * Linux Kernel
+  * Hardware (CPU, RAM, Disk Drives...)
+
+Container Virtualization:
+* Ubuntu, SUSE, RHEL, Debian
+  * Container Management Platform
+  * Linux Kernel
+  * Hardware
+
+Linux in a Container World:
+* Host Administration
+  * Privileges
+  * Kernel Access
+* Container Administration
+  * Application Design
+* The Future of Linux
+  * Microservices
+  * DevOps
+  * Development support
+
+<h3> Understanding the Docker Ecosystem: </h3>
+
+Docker Resources:
+* Image hosting:
+  * Docker Hub
+  * Docker Registry - software package
+* Storage:
+  * Docker Volumes
+  * Third-party solutions
+
+* `docker network ls` = docker containers usually are going to be running clusters, they'll need a way to talk to each other and to outside networks.
+* `docker network create newnet` = you can define and control networks manually from the command line or through various container orchestation tools like Kubernetes system and Amazon's Elastic Container Service (ECS)
+
 
 
 </div>
