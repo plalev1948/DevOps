@@ -599,7 +599,16 @@ Docker Resources:
 * `docker network ls` = docker containers usually are going to be running clusters, they'll need a way to talk to each other and to outside networks.
 * `docker network create newnet` = you can define and control networks manually from the command line or through various container orchestation tools like Kubernetes system and Amazon's Elastic Container Service (ECS)
 
+<h3> Installing Docker Engine on Linux </h3>
 
+* `sudo groupadd docker`
+* `sudo usermod -aG docker $USER`
+* `newgrp docker` = run the following command to activate the changes to groups
+* `docker run hello-world` = verify that you can run docker commands without sudo
+
+
+* `sudo service ssh start`
+* 
 
 </div>
 </body>
