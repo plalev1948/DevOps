@@ -88,6 +88,11 @@ Distributions are build into families. The best know families are Debian (Ubuntu
 
 Notes:
 
+Using Linux Help Resources:
+* `man builtins` = starts a list of commands
+* `info`
+
+
 Linux is probably going to be the infrastucture powering things under the hood. It has:
 * most web and app servers
 * most CI/CD deployments
@@ -598,6 +603,36 @@ Docker Resources:
 
 * `docker network ls` = docker containers usually are going to be running clusters, they'll need a way to talk to each other and to outside networks.
 * `docker network create newnet` = you can define and control networks manually from the command line or through various container orchestation tools like Kubernetes system and Amazon's Elastic Container Service (ECS)
+
+<h3> Installing Docker Engine on Linux </h3>
+
+* `sudo service ssh start`
+* `sudo groupadd docker`
+* `sudo usermod -aG docker $USER`
+* `newgrp docker` = run the following command to activate the changes to groups
+* `sudo service docker start`
+* `docker run hello-world` = verify that you can run docker commands without sudo
+* `sudo docker run -it ubuntu bash` = once this command is finished, we will find our selves logged in the Ubuntu container as `root`
+* `exit` = when I exit, the container will shut down
+* `docker ps` = list the currently running containers
+* `sudo docker ps -a` = a list of all containers, including those that are stopped
+
+<h3> Building a Customized Docker Image </h3>
+
+Here we will do the following:
+* Create a Dockerfile
+* Push image to Docker Hub
+
+* `nano Dockerfile`
+* `sudo docker build -t webserver .` = use this command to get things rolling; `-t` will specify the naming tag, `webserver` in this case, we want to attach to this image; `.` dot tells the docker build to look for a Dockerfile in the current directory
+* `sudo docker images` = run the command to confirm that our new images are loaded and waiting for us
+* `sudo docker run -d -p 80:80 webserver` = fire up a container on the webserver image using the command; `-d` tells Docker to remain detached from the container, meaning we don't want to open a shell session inside; `-p` will permit incoming traffic from my host network on port 80 and through port 80 to the container
+* `curl localhost` = run the command from the host machine to confirm everything is operational
+* `docker login` = if I want to share the file with the closest people to me, I could push it to a repo in my `Docker Hub` account
+* `docker search nextcloud` = search for an image, if you are going to need it
+* `docker pull nextcloud` = download an image, if you want
+* `docker tag webserver [username]plalev00/webserver`
+* `docker push plalev00/webserver`
 
 
 
