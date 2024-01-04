@@ -88,6 +88,11 @@ Distributions are build into families. The best know families are Debian (Ubuntu
 
 Notes:
 
+Using Linux Help Resources:
+* `man builtins` = starts a list of commands
+* `info`
+
+
 Linux is probably going to be the infrastucture powering things under the hood. It has:
 * most web and app servers
 * most CI/CD deployments
@@ -608,7 +613,7 @@ Docker Resources:
 
 
 * `sudo service ssh start`
-* 
+
 
 </div>
 </body>
