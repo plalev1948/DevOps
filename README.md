@@ -21,7 +21,7 @@ This is going to be a GitHub repository for starting my journey in DevOps ðŸ’»ðŸ
   - [ ] Getting Started in the Lab Environment
   - [ ] Work Effectively with Version Control in DevOps
   - [ ] Validate Your Work with Automated Testing
-- [ ] Linux:
+- [x] ~~Linux:~~
   - [x] ~~Getting Started with Linux~~
   - [x] ~~Linux Command Line~~
   - [x] ~~Linux System Administration~~
