@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<h1> Goals </h1>
+<h1> Linux Goals </h1>
 <p> My goal is by the end of the learning to be able to install and manage simple Linux deployment and futher develop my Linux administration skills. <p>
 </head>
 
@@ -126,7 +126,8 @@ Currently there are 3 main classes of desktop:
 - Xfce
 - KDE
 
-Working with the Linux Server:
+<h2> Working with the Linux Server: </h2>
+
 server - a computer on which there is at least one process, whose job it is to serve the needs of a remote user, usually called a client
 
 Using Linux Containers:
@@ -146,7 +147,7 @@ To install manually Nextcloud you need to :
 
 All of this above can be done with a snap. `A snap` is a kind of virtual partition that exists within your file system inside its own isolated environment.
 
-<h2>Linux Command Line:</h2>
+<h2> Linux Command Line: </h2>
 <br>
   <ul>
     <li>basics of command syntax patterns</li>
@@ -198,7 +199,7 @@ associated with your system's network interfaces.
 
   Keep in mind there is autocomplete for Linux! It will work when there is only one possible matching possibility in the directory.
 
-Navigating the Linux File System:
+<h2> Navigating the Linux File System: </h2>
 
 * `pwd` = present work directory
 * `cd` = change directory
@@ -223,7 +224,7 @@ Navigating the Linux File System:
 
 Note: Deleted files cannot be restored.
 
-Searching the Linux File System:
+<h2> Searching the Linux File System: </h2>
 
 * `locate` = quickest and easiest way to find files in Linux. For example you don't remember where the configuration file is and you just type `locate adduser`
 * `sudo updatedb` = if you are looking for files that have been added quite recently. This will get you going when you need to find a file
@@ -252,7 +253,7 @@ $ cat /etc/group | grep ubuntu
 * standard output -> `stdout` -> 1 -> example: `echo` Hello -> result: Hello ; `echo "Hello" >> myFile.txt` ; cat myfile.txt
 * standard error -> `stderr` -> 2 -> wget pluralsight.comm -> wget pluralsight.comm 2> errorfile.txt -> cat errorfile.txt  Note: the number `2` is a number for designated error.
 
-Working with Archives:
+<h2> Working with Archives: </h2>
 
 * The most common thing for compresion is `tar` when working with archives. The `.tar` ending tell us that it's an archive and the `.gz` tells us that it's also compresed gzip algorithm.
 
@@ -267,8 +268,9 @@ To work with zip files, we have to know how to work with unzip.
 * `ls akismet[name of the zip file]`
 * `zip newname.zip *` = you can create a new zip archive using the new "zip" command
 
+<h2> Troubleshooting Peripherals: </h2>
 Linux Kernel Modules and Peripherals:
-Troubleshooting Peripherals:
+
 * Step One - `Is the device recognized by the system?`
 * Step Two - `Is the appropriate kernel module loaded?`
 * `lsusb` = using the command line, with this command we can see what devices does Linux see
@@ -283,8 +285,7 @@ Troubleshooting Peripherals:
 
 The sounds files in Linux end with the `.ko` file extension.
 
-Linux Network Connectivity:
-
+<h2> Linux Network Connectivity: </h2>
 <ul>
   <br>This includes:
   <li>Analyzing network connectivity</li>
@@ -378,7 +379,6 @@ The difference between `builtins` and `external commands`. A `builtin` is a prog
 
 <h2> Linux System Administration: </h2>
 
-
 * System permormance optimization
     * Troubleshooting problems
     * Preventing problems
@@ -394,8 +394,7 @@ The difference between `builtins` and `external commands`. A `builtin` is a prog
   * Encryption
 * Docker containers
 
-
-<h3> Monitoring System Resources </h3>
+<h2> Monitoring System Resources </h2>
 
 We will take a look at `System performance metrics` like `RAM`, `Storage`, `CPU` and `Bandwith`. The 2 main goals here are:
 * Understand capacity usage
@@ -414,7 +413,7 @@ We will take a look at `System performance metrics` like `RAM`, `Storage`, `CPU`
 * `sudo apt install iftop` = command to install the command
 * `sudo iftop -i eth0[active interface]` = after running this command you will see source and target addresses associated with requests in the top section of the screen and upload and download statistics below
 
-<h3> Managing System Processes: </h3>
+<h2> Managing System Processes: </h2>
 
 In this section we are going to have the commands for the following events:
 * Monitor process event data
@@ -437,7 +436,7 @@ The difference between the commands `kill` and `killall` is that `kill` will onl
 `sudo systemctl status apache2` = you can check on current state of a process using system ctl using `systemctl status`. This example shows you that the Apache HTTP server software is installed, active and enabled. Enabled means it's set to automatically load each time the computer boots. If we didn't want it to load on boot, I could run `systemctl disable` and after checking the status once again we will make sure it is indeed disabled.
 `sudo systemctl start apache` = you can use systemctl to manuall start or stop a process
 
-<h3> Managing Process Priorities: </h3>
+<h2> Managing Process Priorities: </h2>
 
 To manage a couple of applications and you want them to "play" together and not consume so much memory you can use `nice`.
 
@@ -450,7 +449,7 @@ If you would like to change the value of a running process you can use `renice`.
 
 example: `renice 15 -p 80[process ID]`
 
-<h3> Working with Users and Groups: </h3>
+<h2> Working with Users and Groups: </h2>
 
 * Account data - system files where user and group data is stored
 * Access control
@@ -481,7 +480,8 @@ x = indicates the existance of password in the shadow file
 * `w` = this command tells us not only who is currently logged in, but what he is also doing as well
 * `last | less` = gives you every login since the beginning of the month
 
-How to create and delete users and groups.
+<h2> How to create and delete users and groups. </h2>
+
 * `sudo useradd -m` = to create a new user and the `-m` part tells Linux to create a new directory in the home tree with the user's name
 * `ls -a` = so we can see the hidden files
 * `/etc/skel` = this is known as a skeleton directory, because it contains files or directories you'd like to form the skeleton or base of the `home` directory of new users as their new accounts are created.
@@ -493,14 +493,14 @@ How to create and delete users and groups.
 * `sudo chmod g+w /var/secret/` = edit the permissions for the secret directory to allow group members to edit files; `g+w` means that we will add write permissions for members of the directory's group
 
 
-<h3> Securing Your Linux Server covers: </h3>
+<h2> Securing Your Linux Server covers: </h2>
 
 * Permissions
 * Software patches
 * managing network ports
 * Data encryption
 
-Applying Object Permissions:
+<h2> Applying Object Permissions: </h2>
 
 * `cd /var/secret`
 * `ls -l` = `-l` means long version
@@ -524,7 +524,7 @@ for example: `-rw-rw-r-x` stands for 665 and a secret directory is worth `775`
 
 `chmod 777 data.txt ` = this would add execute powers to the user and group and write to others
 
-<h3> Extending Object Usability: </h3>
+<h2> Extending Object Usability: </h2>
 
 By adding a `sticky bit` value to the directory permissions, group members will only be able to delete their own files within the directory, but not files belonging to others.
 
@@ -537,7 +537,7 @@ Sometimes you might need access to individual directories or files from more tha
 * `sudo ln -s /home/ubuntu/scripts/myscript.sh` = `ln` will create a link, while `-s` specifies that the link should be symbolic; the first location is the original script and it's location and the second one is where you'd like the symbolic link created
 
 
-<h3> Hardening Your Server includes: </h3>
+<h2> Hardening Your Server includes: </h2>
 
 * Reducing vulnerability
 * Patching systems
@@ -555,14 +555,14 @@ Service Access Controls:
 * `nmap -v -sT bootstrap-it.com` = using the same command on a remote server
 
 
-<h3> Data Encryption </h3>
+<h2> Data Encryption </h2>
 
 Email Server Elements:
 * Mail transport agent (MTA) - Postfix. Sendmail
 * Mail delivery agent (MDA) - Dovecot
 * Mail user agents (MUA) - Thunderbird
 
-<h3> Working with Docker and Linux Containers: </h3>
+<h2> Working with Docker and Linux Containers: </h2>
 
 Physical Server Model:
 * Operating System
@@ -591,7 +591,7 @@ Linux in a Container World:
   * DevOps
   * Development support
 
-<h3> Understanding the Docker Ecosystem: </h3>
+<h2> Understanding the Docker Ecosystem: </h2>
 
 Docker Resources:
 * Image hosting:
@@ -604,7 +604,7 @@ Docker Resources:
 * `docker network ls` = docker containers usually are going to be running clusters, they'll need a way to talk to each other and to outside networks.
 * `docker network create newnet` = you can define and control networks manually from the command line or through various container orchestation tools like Kubernetes system and Amazon's Elastic Container Service (ECS)
 
-<h3> Installing Docker Engine on Linux </h3>
+<h2> Installing Docker Engine on Linux </h2>
 
 * `sudo service ssh start`
 * `sudo groupadd docker`
@@ -617,7 +617,7 @@ Docker Resources:
 * `docker ps` = list the currently running containers
 * `sudo docker ps -a` = a list of all containers, including those that are stopped
 
-<h3> Building a Customized Docker Image </h3>
+<h2> Building a Customized Docker Image </h2>
 
 Here we will do the following:
 * Create a Dockerfile
@@ -633,8 +633,6 @@ Here we will do the following:
 * `docker pull nextcloud` = download an image, if you want
 * `docker tag webserver [username]plalev00/webserver`
 * `docker push plalev00/webserver`
-
-
 
 </div>
 </body>
