@@ -27,6 +27,8 @@
 * Automate to remove overburdening of staff
 * Attack bottlenecks that decrease flow
 
+<h2> Defining DevOps </h2>
+DevOps represents a change in IT culture, focusing on rapid IT service delivery through the adoption of agile, lean practices in the context of a system-oriented approach. It can also be seen as: a combination of cultural philosophies, practices, and tools that increase an organization's ability to deliver applications and services at high velocity.
 
 <div>
 </body>
