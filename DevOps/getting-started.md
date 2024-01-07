@@ -30,6 +30,15 @@
 <h2> Defining DevOps </h2>
 DevOps represents a change in IT culture, focusing on rapid IT service delivery through the adoption of agile, lean practices in the context of a system-oriented approach. It can also be seen as: a combination of cultural philosophies, practices, and tools that increase an organization's ability to deliver applications and services at high velocity.
 
+<h2> What DevOps Is Not </h2>
+
+* DevOps is not a team or software methodology
+* DevOps is not something you buy
+* DevOps is not an IT-only effort
+* DevOps is not just automating infrastructure
+* DevOps is not easy!
+
+
 <div>
 </body>
 </html>
