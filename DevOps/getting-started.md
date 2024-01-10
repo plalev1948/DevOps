@@ -8,8 +8,9 @@
 
 <body>
 <div class="main-paragraph">
+<h2> The Big Picture in DevOps: </h2>
 
-<h2> What is Lean all about? </h2>
+<h3> What is Lean all about? </h3>
 
 * Focus on value
 * Eliminate waste
@@ -18,7 +19,7 @@
 * No overburdening of people
 * Apply Theory of Constraints
 
-<h2> How Lean Relates to Software Delivery? </h2>
+<h3> How Lean Relates to Software Delivery? </h3>
 
 * Reorient towards product thinking
 * Remove wasteful processes
@@ -27,10 +28,10 @@
 * Automate to remove overburdening of staff
 * Attack bottlenecks that decrease flow
 
-<h2> Defining DevOps </h2>
+<h3> Defining DevOps </h3>
 DevOps represents a change in IT culture, focusing on rapid IT service delivery through the adoption of agile, lean practices in the context of a system-oriented approach. It can also be seen as: a combination of cultural philosophies, practices, and tools that increase an organization's ability to deliver applications and services at high velocity.
 
-<h2> What DevOps Is Not </h2>
+<h3> What DevOps Is Not </h3>
 
 * DevOps is not a team or software methodology
 * DevOps is not something you buy
@@ -38,7 +39,7 @@ DevOps represents a change in IT culture, focusing on rapid IT service delivery 
 * DevOps is not just automating infrastructure
 * DevOps is not easy!
 
-<h2> Adopting DevOps Culture, Practices, and Technologies </h2>
+<h3> Adopting DevOps Culture, Practices, and Technologies </h3>
 
 * The Cultural changes
 * The Organizational changes
@@ -54,6 +55,8 @@ DevOps represents a change in IT culture, focusing on rapid IT service delivery 
   * `Take Advantage of Public Clouds` - API-driven platforms for on-demand, elastic infrastructure and services; reduce waiting waste, while getting fully automated provisioning and management of planet-scale systems - solutions in this space frm Google, Microsoft and Amazon
   * `Improve Monitoring and Observability` - instrument software and processes to capture data about system state and user interactions; increase transparency, identify problems - solutions Datadog, Splunk and New Relic
   * `Infuse Security Practices Throughout` - enabling automated security checks throughout the software delivery process; improve software quality, increase empowerment of team members, and build confidence with stakeholders - solutions Snyk, Twistlock and Aqua
+
+<h2> Core Concepts and Fundamentals in DevOps: </h2>
 
 
 <div>
