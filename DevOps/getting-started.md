@@ -61,6 +61,9 @@ DevOps represents a change in IT culture, focusing on rapid IT service delivery 
 * The principles of Lean Development - eliminate waste;
 * least privilege principle
 * deliver early means `deliver fast` - this will help facilitate feedback and deliver often
+* `The seven Wastes` = `partially done work`, `extra features`, `relearning`, `handoffs`, `task switching`, `delays`, `defects`
+* creating quality in a lean context = `pareto analysis`; optimize the human experience and `create interoperability` means compose the one, true build
+
 
 
 <div>
