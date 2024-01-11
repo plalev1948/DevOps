@@ -58,6 +58,10 @@ DevOps represents a change in IT culture, focusing on rapid IT service delivery 
 
 <h2> Core Concepts and Fundamentals in DevOps: </h2>
 
+* The principles of Lean Development - eliminate waste;
+* least privilege principle
+* deliver early means `deliver fast` - this will help facilitate feedback and deliver often
+
 
 <div>
 </body>
