@@ -73,6 +73,18 @@ The effect on version control:
 
 To create a Build you need a `build engine` and a `build script`.
 
+* Demo: a super-simple build:
+
+* `dotnet new webapp --name BuildWebApp`
+* `cd BuildWebApp`
+* `cls`
+* `dir`
+* `dotnet build` = this is the build command
+
+After that select a build tool.
+
+* `git init` = initialize the repo
+
 
 <div>
 </body>
