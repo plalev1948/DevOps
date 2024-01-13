@@ -64,6 +64,14 @@ DevOps represents a change in IT culture, focusing on rapid IT service delivery 
 * `The seven Wastes` = `partially done work`, `extra features`, `relearning`, `handoffs`, `task switching`, `delays`, `defects`
 * creating quality in a lean context = `pareto analysis`; optimize the human experience and `create interoperability` means compose the one, true build
 
+<h2> Understanding What DevOps Replaces: </h2>
+
+The effect on version control:
+* all this feeds back into version control practices
+* you merge too often
+* all the merge conflicts landed on his plate
+
+To create a Build you need a `build engine` and a `build script`.
 
 
 <div>
