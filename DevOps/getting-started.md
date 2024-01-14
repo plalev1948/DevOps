@@ -97,6 +97,11 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
   * `Security` belongs in version control.
 
 
+<h2> Verifying Knowledge in DevOps: </h2>
+
+* `How a build fails is at least as important as how it succeeds.`
+
+
 <div>
 </body>
 </html>
