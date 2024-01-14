@@ -85,6 +85,17 @@ After that select a build tool.
 
 * `git init` = initialize the repo
 
+`Infrastructure as Code` means one simple thing, a script to build your infrastructure from the ground up. This includes using Docker and containers as well.
+`IaC` is typically JSON. `Configuration Drift` = configuration changes after the initial IaC sync; you need to keep your infrastructure in configuration.
+
+* Demo: Infrastructure as Code Approaches:
+
+Look into an Azure Resource Template in Azure, how it works, running a simple Dockerfile and talk about how that would work.
+
+* Secrets and Security in DevOps
+  * `Secrets` do not belong in version control. They belong in a secure store.
+  * `Security` belongs in version control.
+
 
 <div>
 </body>
