@@ -100,6 +100,7 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
 <h2> Verifying Knowledge in DevOps: </h2>
 
 * `How a build fails is at least as important as how it succeeds.`
+* `Version control is an example of a first-class artifact`
 
 
 <div>
