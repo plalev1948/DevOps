@@ -100,7 +100,19 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
 <h2> Verifying Knowledge in DevOps: </h2>
 
 * `How a build fails is at least as important as how it succeeds.`
-* `Version control is an example of a first-class artifact`
+* `Version control is an example of a first-class artifact.`
+* `The product development cycle is the process of constructing certainty.`
+* `Automated Deployment Wrap-up:`
+  * `All DevOps is a combination of science and lore.`
+  * `You want to maximize the science and minimize the lore.`
+  * `The lore was the publish and artifact drop.`
+  * `Don't be discourated, if you run into fiddly bits.`
+* `We need two things when deplyoing a database so that it is consistent - a known state in the target db and a script to migrate us to the new state`
+
+<h2> Adopting DevOps in Your Enterprise: </h2>
+
+* `DevOps, Lean, and Agile in the broad sense are all just systems to force you to stop pretending that you know more than you really do.`
+
 
 
 <div>
