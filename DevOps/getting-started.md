@@ -64,7 +64,7 @@ DevOps represents a change in IT culture, focusing on rapid IT service delivery 
 * `The seven Wastes` = `partially done work`, `extra features`, `relearning`, `handoffs`, `task switching`, `delays`, `defects`
 * creating quality in a lean context = `pareto analysis`; optimize the human experience and `create interoperability` means compose the one, true build
 
-<h2> Understanding What DevOps Replaces: </h2>
+<h3> Understanding What DevOps Replaces: </h3>
 
 The effect on version control:
 * all this feeds back into version control practices
@@ -97,7 +97,7 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
   * `Security` belongs in version control.
 
 
-<h2> Verifying Knowledge in DevOps: </h2>
+<h3> Verifying Knowledge in DevOps: </h3>
 
 * `How a build fails is at least as important as how it succeeds.`
 * `Version control is an example of a first-class artifact.`
@@ -109,7 +109,7 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
   * `Don't be discourated, if you run into fiddly bits.`
 * `We need two things when deplyoing a database so that it is consistent - a known state in the target db and a script to migrate us to the new state`
 
-<h2> Adopting DevOps in Your Enterprise: </h2>
+<h3> Adopting DevOps in Your Enterprise: </h3>
 
 * `DevOps, Lean, and Agile in the broad sense are all just systems to force you to stop pretending that you know more than you really do.`
 
