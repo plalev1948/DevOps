@@ -109,6 +109,11 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
   * `Don't be discourated, if you run into fiddly bits.`
 * `We need two things when deplyoing a database so that it is consistent - a known state in the target db and a script to migrate us to the new state`
 
+<h2> Adopting DevOps in Your Enterprise: </h2>
+
+* `DevOps, Lean, and Agile in the broad sense are all just systems to force you to stop pretending that you know more than you really do.`
+
+
 
 <div>
 </body>
