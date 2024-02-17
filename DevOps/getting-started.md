@@ -113,6 +113,9 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
 
 * `DevOps, Lean, and Agile in the broad sense are all just systems to force you to stop pretending that you know more than you really do.`
 
+<h2> Test-driven Development in DevOps: </h2>
+
+<h3> Why We Test </h3>
 
 
 <div>
