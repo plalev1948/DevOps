@@ -117,6 +117,10 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
 
 <h3> Why We Test </h3>
 
+* `Test as Little as Possible, as much as Possible`
+* `Many small tests, not fewer big tests`
+* `The smaller the test, the more specific the knowledge created`
+
 
 <div>
 </body>
