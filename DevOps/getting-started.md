@@ -121,6 +121,18 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
 * `Many small tests, not fewer big tests`
 * `The smaller the test, the more specific the knowledge created`
 
+<h2> Understanding Test Automation and Test-driven Development </h2>
+
+* `The TDD Paradigm:`
+  * `Write a test from the spec`
+  * `Make the code compile`
+  * `Make the test pass`
+
+* `Performance Testing`
+  * `Benchmarking` - good for comparing different ways to solve problems; this is a type of unit testing;
+  * `Load Testing` - type of integration testing;
+
+
 
 <div>
 </body>
