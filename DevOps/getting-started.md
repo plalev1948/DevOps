@@ -128,6 +128,12 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
   * `Make the code compile`
   * `Make the test pass`
 
+* `Performance Testing`
+  * `Benchmarking` - good for comparing different ways to solve problems; this is a type of unit testing;
+  * `Load Testing` - type of integration testing;
+
+
+
 <div>
 </body>
 </html>
