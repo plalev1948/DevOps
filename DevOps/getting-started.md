@@ -132,8 +132,6 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
   * `Benchmarking` - good for comparing different ways to solve problems; this is a type of unit testing;
   * `Load Testing` - type of integration testing;
 
-
-
 <div>
 </body>
 </html>
