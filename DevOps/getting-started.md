@@ -132,6 +132,12 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
   * `Benchmarking` - good for comparing different ways to solve problems; this is a type of unit testing;
   * `Load Testing` - type of integration testing;
 
+<h2> Continuous Integration and Continuous Delivery </h2>
+
+* `Integration` - consists of integration and build
+* `Deployment` - consists of release, instructions and operations
+
+
 <div>
 </body>
 </html>
