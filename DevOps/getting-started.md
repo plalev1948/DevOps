@@ -137,6 +137,14 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
 * `Integration` - consists of integration and build
 * `Deployment` - consists of release, instructions and operations
 
+Benefits of Continuous Integration:
+* `Integration takes less effort`
+* `Issues will come up more early`
+* `Automation means less issues`
+* `The process is more visible`
+* `Improved team communication`
+* `Short integration iterations means more flexibility`
+* `The code is ready to be delivered more often`
 
 <div>
 </body>
