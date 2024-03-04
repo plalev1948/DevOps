@@ -146,6 +146,14 @@ Benefits of Continuous Integration:
 * `Short integration iterations means more flexibility`
 * `The code is ready to be delivered more often`
 
+Benefits of Continuous Delivery:
+* `Releasing takes less effort`
+* `Releasing is more reliable and repeatable`
+* `Higher Quality`
+* `Faster Delivery`
+* `More Flexibility`
+
+
 <div>
 </body>
 </html>
