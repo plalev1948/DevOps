@@ -132,6 +132,63 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
   * `Benchmarking` - good for comparing different ways to solve problems; this is a type of unit testing;
   * `Load Testing` - type of integration testing;
 
+<h2> Continuous Integration and Continuous Delivery </h2>
+
+* `Integration` - consists of integration and build
+* `Deployment` - consists of release, instructions and operations
+
+<h3> Benefits of Continuous Integration: </h3>
+
+* `Integration takes less effort`
+* `Issues will come up more early`
+* `Automation means less issues`
+* `The process is more visible`
+* `Improved team communication`
+* `Short integration iterations means more flexibility`
+* `The code is ready to be delivered more often`
+
+<h3> Benefits of Continuous Delivery: </h3>
+
+* `Releasing takes less effort`
+* `Releasing is more reliable and repeatable`
+* `Higher Quality`
+* `Faster Delivery`
+* `More Flexibility`
+
+<h3> Advanced Continuous Delivery topics: </h3>
+
+* `Blue-green Deployment`
+* `Canary Release`
+* `Feature Flags`
+
+`Some times all of these items are called and are part of Progressive Delivery`.
+
+* `GitOps`
+
+<h3> Implement Continuous Integration: </h3>
+
+* `Get to a Single Source Control Repository`
+* `Create an Automated Process`
+  * `Setup a dedicated server`
+  * `Install a build engine`
+  * `Create build definition(s)`
+* `Create an Automated Test Process`
+  * `Run static tests with the build`
+  * `Deploy the build result to a (temporary) environment`
+  * `Run (UI) tests`
+
+<h3> Implement Continuous Delivery: </h3>
+
+* `Have Continuous Integration in place`
+* `Unite developers and Operations`
+* `Deploy and Test the Release`
+  * `Configure a deployment server`
+  * `Create release definition(s)`
+  * `Run tests`
+* `Create an Iac Process`
+  * `Scripts your environments`
+  * `Create release definition(s)`
+  * `Run tests`
 
 
 <div>
