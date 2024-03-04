@@ -165,6 +165,31 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
 
 * `GitOps`
 
+<h3> Implement Continuous Integration: </h3>
+
+* `Get to a Single Source Control Repository`
+* `Create an Automated Process`
+  * `Setup a dedicated server`
+  * `Install a build engine`
+  * `Create build definition(s)`
+* `Create an Automated Test Process`
+  * `Run static tests with the build`
+  * `Deploy the build result to a (temporary) environment`
+  * `Run (UI) tests`
+
+<h3> Implement Continuous Delivery: </h3>
+
+* `Have Continuous Integration in place`
+* `Unite developers and Operations`
+* `Deploy and Test the Release`
+  * `Configure a deployment server`
+  * `Create release definition(s)`
+  * `Run tests`
+* `Create an Iac Process`
+  * `Scripts your environments`
+  * `Create release definition(s)`
+  * `Run tests`
+
 
 <div>
 </body>
