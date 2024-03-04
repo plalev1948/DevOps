@@ -153,6 +153,15 @@ Benefits of Continuous Delivery:
 * `Faster Delivery`
 * `More Flexibility`
 
+Advanced Continuous Delivery topics:
+* `Blue-green Deployment`
+* `Canary Release`
+* `Feature Flags`
+
+`Some times all of these items are called and are part of Progressive Delivery`.
+
+* `GitOps`
+
 
 <div>
 </body>
