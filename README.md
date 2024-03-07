@@ -14,7 +14,7 @@ This is going to be a GitHub repository for starting my journey in DevOps ðŸ’»ðŸ
   - [x] ~~The Big Picture~~
   - [x] ~~Core Concepts and Fundamentals~~
   - [x] ~~Test-driven Development~~
-  - [ ] Continuous Integration and Continuous Delivery
+  - [x] ~~Continuous Integration and Continuous Delivery~~
   - [ ] Security and DevSecOps
   - [ ] Operational Strategies
   - [ ] Planning and Implementing a DevOps Strategy
