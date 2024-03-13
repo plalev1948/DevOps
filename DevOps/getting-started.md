@@ -190,6 +190,8 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
   * `Create release definition(s)`
   * `Run tests`
 
+<h2> Security and DevSecOps: </h2>
+
 
 <div>
 </body>
