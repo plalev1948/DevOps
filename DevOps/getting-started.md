@@ -192,6 +192,9 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
 
 <h2> Security and DevSecOps: </h2>
 
+* `Protect your software supply chain`
+* `Improve your security`
+* `Incorporate automated scanning`
 
 <div>
 </body>
