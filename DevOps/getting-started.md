@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <h1> DevOps Goals </h1>
-<!-- <p> <p> -->
 </head>
 
 <body>
@@ -221,6 +220,6 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
 * `The "shift left" philosophy means there is much value in moving the security interventions as close to the start of the pipeline as possible. `
 
 
-<div>
+</div>
 </body>
 </html>
