@@ -190,6 +190,36 @@ Look into an Azure Resource Template in Azure, how it works, running a simple Do
   * `Create release definition(s)`
   * `Run tests`
 
+<h2> Security and DevSecOps: </h2>
+
+* `Protect your software supply chain`
+* `Improve your security`
+* `Incorporate automated scanning`
+
+* `SDLC` = System development life cycle
+
+* `Main points:`
+  * `securing your pipeline`
+  * `understanding scan standards`
+  * `understanding scan categories`
+
+* `STRIDE = spoofing, tampering, repudiation, information disclosure, evaluation of privilege`
+
+<h3> Fitting Security Into Your Infrastructure: </h3>
+
+* `We have a couple of different types of Infrastructures: there are virtual, cloud and Multi-platform Infrastructures`.
+* `Run regular updates to your software for security reasons.`
+
+<h3> Implement DevSecOps: </h3>
+
+* `General best practices for implementing the philosophy of DevSecOps:`
+  * `recruit partners`
+  * `pick your "fights"`
+  * `use the maturity models`
+  * `follow industry developments`
+
+* `The "shift left" philosophy means there is much value in moving the security interventions as close to the start of the pipeline as possible. `
+
 
 <div>
 </body>
