@@ -134,12 +134,6 @@ SRE Principles and Practices:
 - Post-mortem;
 - Culture;
 
-
-Google Cloud Platform repo in GitHub, checkout!
-3rd Section, 2nd to last video lesson – demo
-
-
-
 	Striving for Observability
 
 - Pillars of Observability: Metrics, Traces and Logs
