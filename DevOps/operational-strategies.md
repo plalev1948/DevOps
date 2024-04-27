@@ -7,144 +7,143 @@
 
 <body>
 <div class="main-paragraph">
-<h2> Operational Strategies in DevOps: </h2>
+<h2> Building Operational Strategies </h2>
 
-Building Operational Strategies
+<p> Aim for this section: Learn the key areas for developing and building a solid operation strategy for the environment. </p>
 
-Course’s aim: The key areas for developing and building a solid operation strategy for the environment.
+* `challenges for building a strategy`
+* `dig into the reliability stack`
+* `address key areas of observability`
+* `automation and the platform team model`
 
-- challenges for building a strategy
-- dig into the reliability stack
-- address key areas of observability 
-- automation and the platform team model
+<p> Mega Trends: </p>
 
-By the end I will the knowledge how to build an operational strategy and how to apply it to your environment.
+* `new technologies and new problems;`
+* `disconnected metrics;`
+* `new tools and hops for complexity;`
+* `silo issues: developers;`
+* `silo issues: operations;`
 
+<p> Landscape Challenges: </p>
 
-Main topics: SRE, Observability and Automation
+* `the predictable legacy application;`
+* `application logging and coarse system-level metrics;`
+* `less complexity and instinctual techniques;`
+* `creative ways to fail;`
 
-- traditional monitoring
-- different demands
+<p> Issues with Traditional Monitoring: </p>
 
-Mega Trends:
-- new technologies and new problems;
-- disconnected metrics;
-- new tools and hops for complexity;
-- silo issues: developers;
-- silo issues: operations;
+* `monolithic application: anticipate the failures;`
+* `monolithic application: reactive approach;`
+* `can’t predict a modern system;`
+* `unpredictable failures;`
 
-Landscape Challenges:
-- the predictable legacy application;
-- application logging and coarse system-level metrics;
-- less complexity and instinctual techniques;
-- creative ways to fail;
+<p> Metric-based approach to monitoring: </p>
 
-Issues with Traditional Monitoring:
-- monolithic application: anticipate the failures;
-- monolithic application: reactive approach;
-- can’t predict a modern system;
-- unpredictable failures;
+* `predictable failure modes;`
+* `issues with metrics;`
+* `lack of connective event;`
+* `user experience;`
+* `static thresholds;`
+* `SLO, SLI and Error Budgets;`
 
+<p> Key Wins: </p>
 
+* `service level management components – objective and indicators;`
+<p> DevOps Automation: </p>
 
-Metric-based approach to monitoring:
-- predictable failure modes;
-- issues with metrics;
-- lack of connective event;
-- user experience;
-- static thresholds;
-- SLO, SLI and Error Budgets;
+* `the value of automation;`
+* `DevOps Tooling;`
+* `Automated Testing;`
+* `Comprehensive Pipelines;`
+* `Infrastructure as Code (IaC);`
+* `Secure the DevOps Workflow;`
 
-Key Wins:
-- service level management components – objective and indicators;
+<p> Striving for Observability: </p>
 
+* `Highlighting Observability;`
+* `Application Interaction;`
+* `Monitoring and Observability;`
 
-DevOps Automation:
-- the value of automation;
-- DevOps Tooling;
-- Automated Testing;
-- Comprehensive Pipelines;
-- Infrastructure as Code (IaC);
-- Secure the DevOps Workflow;
+<p> We have 3 pillars of observability: metrics, traces and logs. </p>
 
-Striving for Observability:
-- Highlighting Observability;
-- Application Interaction;
-- Monitoring and Observability;
-
-We have 3 pillars of observability: metrics, traces and logs.
-
-Striving for Reliability:
-- It’s all about Trust;
-- Measure User experience
+<p> Striving for Reliability: it’s all about Trust and measuring user experience. </p>
 
 
-Reliability Stack:
-- Service Level indicator (SLI);
-- Service Level Objective (SLO);
-- Error Budget;
+<p> Reliability Stack: </p>
 
-Risk Analysis:
-- Configuration problem;
-- Regional failure;
-- spike in traffic;
-- resource problem;
-	Gaining and Measuring Reliability:
+* `Service Level indicator (SLI);`
+* `Service Level Objective (SLO);`
+* `Error Budget;`
 
-Highlighting Reliability:
-- the most important feature is reliability;
-- chaos engineering;
-- service consistency;
-- metrics to care about;
-- cause of outrages;
-- velocity and stability;
+<p> Risk Analysis: </p>
 
-Reliability Key Considerations:
-- the user is the most important, a.k.a. ‘king’
-- user perception;
-- failures are ok;
-- systems will fail;
-- being 100% reliable isn’t what we aim for;
-- SLO-based approach;
+* `Configuration problem;`
+* `Regional failure;`
+* `spike in traffic;`
+* `resource problem;`
+  
+<h2> Gaining and Measuring Reliability: </h2>
 
-DevOps and SRE:
-- reduce organizational silos;
-- accept failure as normal;
-- implement gradual changes;
-- leverage tooling and automation;
-- measure everything;
+<p> Highlighting Reliability: </p>
 
-** DevOps:
-- reduce silos;
-- accept failure as normal;
-- gradual changes;
-- leverage automation;
-- measure everything;
-- baselines;
+* `the most important feature is reliability;`
+* `chaos engineering;`
+* `service consistency;`
+* `metrics to care about;`
+* `cause of outrages;`
+* `velocity and stability;`
 
-** Site Reliability Engineer (SRE):
-- stands between traditional IT and software development;
+<p> Reliability Key Considerations: </p>
 
-SRE Principles and Practices:
-- Metrics and Monitoring;
-- Observability;
-- Capacity Planning;
-- Change Management;
-- Emergency and Incident Response;
-- Post-mortem;
-- Culture;
+* `the user is the most important, a.k.a. ‘king’`
+* `user perception;`
+* `failures are ok;`
+* `systems will fail;`
+* `being 100% reliable isn’t what we aim for;`
+* `SLO-based approach;`
 
-	Striving for Observability
+<p> DevOps and SRE: </p>
 
-- Pillars of Observability: Metrics, Traces and Logs
-- Monitoring and Observability
-- Tools available
+* `reduce organizational silos;`
+* `accept failure as normal;`
+* `implement gradual changes;`
+* `leverage tooling and automation;`
+* `measure everything;`
+
+<p> DevOps: </p>
+
+* `reduce silos;`
+* `accept failure as normal;`
+* `gradual changes;`
+* `leverage automation;`
+* `measure everything;`
+* `baselines;`
+
+<p> Site Reliability Engineer as a position stands between traditional IT and software development. </p>
+
+<p> SRE Principles and Practices: </p>
+
+* `Metrics and Monitoring;`
+* `Observability;`
+* `Capacity Planning;`
+* `Change Management;`
+* `Emergency and Incident Response;`
+* `Post-mortem;`
+* `Culture;`
+
+<h2> Striving for Observability </h2>
+
+* `Pillars of Observability: Metrics, Traces and Logs`
+* `Monitoring and Observability`
+* `Tools available`
 
 
-Key Considerations:
-- no predicts in advance;
-- monitoring tools: we need one tool;
-- monitoring and observability combined;
+<p> Key Considerations: </p>
+
+* `no predicts in advance;`
+* `monitoring tools: we need one tool;`
+* `monitoring and observability combined;`
 
 
 </div>
