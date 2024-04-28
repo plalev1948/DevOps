@@ -145,6 +145,77 @@
 * `monitoring tools: we need one tool;`
 * `monitoring and observability combined;`
 
+<p> Metrics and dashboards is a very reactive approach. Observability is a proactive approach. </p>
+
+Monitoring and Observability:
+- monitoring is best combined with Observability
+- monitoring the infrastructure
+- monitoring the software
+
+Building Observability:
+
+Pillars of Observability:
+- traces – transaction oriented observability
+- logs – event-orientated observability
+- metrics – they are precise
+
+Distributed Tracing – Service Mesh – tool to use
+
+Observability is about giving the right information to the right people.
+
+
+Starting Considerations;
+- Good quality telemetry;
+- Data storage and analytics;
+
+	The role of Automation
+
+Service Pain Points:
+- design and build
+- operate and maintain
+
+Ways to Improve:
+- DevOps and Agile
+- Automation
+- Comprehensive Pipelines
+- AIOps Platforms – there are 2 main components for a AIOp platform – Big Data and Machine Learning;
+- Container Management
+- Team Models
+
+Automation in the CI/CD Pipeline:
+- highlighting CI/CD - Continuous Integration and Continuous Delivery
+- CI/CD Tools – Jenkins, GitLab
+Building the DevOps Flow:
+- GitLab Continuous Integration
+- The Deployment Flow
+- GitLab Continuous Delivery
+- Post Deployment Validation
+- Infrastructure Testing, System Testing and Application Testing
+
+Application Testing:
+- Smoke Tests
+- Functional Regressions Tests
+- End-to-end Test
+
+Release Deployment Strategies:
+- Big Bang;
+- Rolling Deployment;
+- Blue-Green Deployment;
+- Canary Deployment;
+
+Infrastructure as Code (IaC):
+- Infrastructure as Code – Terraform Scripts and templates, policies; Terraform
+- IaC Tools – Terraform, Puppet;
+- Benefits of IaC;
+
+Security in the CI/CD Pipeline:
+- Application Security;
+- Static Analysis;
+- Dynamic Analysis;
+- Dependent Scanning;
+- Infrastructure Security;
+- Security Tools;
+
 
 </div>
 </body>
