@@ -147,75 +147,83 @@
 
 <p> Metrics and dashboards is a very reactive approach. Observability is a proactive approach. </p>
 
-Monitoring and Observability:
-- monitoring is best combined with Observability
-- monitoring the infrastructure
-- monitoring the software
+<p> Monitoring and Observability: </p>
 
-Building Observability:
+* `monitoring is best combined with Observability`
+* `monitoring the infrastructure`
+* `monitoring the software`
 
-Pillars of Observability:
-- traces – transaction oriented observability
-- logs – event-orientated observability
-- metrics – they are precise
+<p> Building Observability: Pillars of Observability: </p>
 
-Distributed Tracing – Service Mesh – tool to use
+* `traces – transaction oriented observability`
+* `logs – event-orientated observability`
+* `metrics – they are precise`
 
-Observability is about giving the right information to the right people.
+<p> Distributed Tracing – Service Mesh – tool to use. </p>
+<p> Observability is about giving the right information to the right people. </p>
 
 
-Starting Considerations;
-- Good quality telemetry;
-- Data storage and analytics;
+<p> Starting Considerations; </p>
 
-	The role of Automation
+* `Good quality telemetry;`
+* `Data storage and analytics;`
 
-Service Pain Points:
-- design and build
-- operate and maintain
+<h2> The role of Automation </h2>
 
-Ways to Improve:
-- DevOps and Agile
-- Automation
-- Comprehensive Pipelines
-- AIOps Platforms – there are 2 main components for a AIOp platform – Big Data and Machine Learning;
-- Container Management
-- Team Models
+<p> Service Pain Points: </p>
 
-Automation in the CI/CD Pipeline:
-- highlighting CI/CD - Continuous Integration and Continuous Delivery
-- CI/CD Tools – Jenkins, GitLab
-Building the DevOps Flow:
-- GitLab Continuous Integration
-- The Deployment Flow
-- GitLab Continuous Delivery
-- Post Deployment Validation
-- Infrastructure Testing, System Testing and Application Testing
+* `design and build`
+* `operate and maintain`
 
-Application Testing:
-- Smoke Tests
-- Functional Regressions Tests
-- End-to-end Test
+<p> Ways to Improve: </p>
 
-Release Deployment Strategies:
-- Big Bang;
-- Rolling Deployment;
-- Blue-Green Deployment;
-- Canary Deployment;
+* `DevOps and Agile`
+* `Automation`
+* `Comprehensive Pipelines`
+* `AIOps Platforms – there are 2 main components for a AIOp platform – Big Data and Machine Learning;`
+* `Container Management`
+* `Team Models`
 
-Infrastructure as Code (IaC):
-- Infrastructure as Code – Terraform Scripts and templates, policies; Terraform
-- IaC Tools – Terraform, Puppet;
-- Benefits of IaC;
+<p> Automation in the CI/CD Pipeline: </p>
 
-Security in the CI/CD Pipeline:
-- Application Security;
-- Static Analysis;
-- Dynamic Analysis;
-- Dependent Scanning;
-- Infrastructure Security;
-- Security Tools;
+* `highlighting CI/CD - Continuous Integration and Continuous Delivery`
+* `CI/CD Tools – Jenkins, GitLab`  
 
+<p> Building the DevOps Flow: </p>
+
+* `GitLab Continuous Integration`
+* `The Deployment Flow`
+* `GitLab Continuous Delivery`
+* `Post Deployment Validation`
+* `Infrastructure Testing, System Testing and Application Testing`
+
+<p> Application Testing: </p>
+
+* `Smoke Tests`
+* `Functional Regressions Tests`
+* `End-to-end Test`
+
+<p> Release Deployment Strategies: </p>
+
+* `Big Bang;`
+* `Rolling Deployment;`
+* `Blue-Green Deployment;`
+* `Canary Deployment;`
+
+<p> Infrastructure as Code (IaC): </p>
+
+* `Infrastructure as Code – Terraform Scripts and templates, policies; Terraform`
+* `IaC Tools – Terraform, Puppet;`
+* `Benefits of IaC;`
+
+<p> Security in the CI/CD Pipeline: </p>
+
+* `Application Security;`
+* `Static Analysis;`
+* `Dynamic Analysis;`
+* `Dependent Scanning;`
+* `Infrastructure Security;`
+* `Security Tools;`
 
 </div>
 </body>
