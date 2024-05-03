@@ -9,49 +9,61 @@
 <div class="main-paragraph">
 <h2> Planning and Implementing a DevOps Strategy </h2>
 
-Topics to consider:
-- Defining DevOps
-- What Not to do
-- Is DevOps worth it?
-- Analyzing your company
-- Analyzing your people
-- Analyzing your value streams
+<p> Topics to consider: </p>
 
-cloud.google.com/devops
+* `Defining DevOps`
+* `What Not to do`
+* `Is DevOps worth it?`
+* `Analyzing your company`
+* `Analyzing your people`
+* `Analyzing your value streams`
 
-Do not do these things when starting DevOps:
-- buy lots of new software;
-- rename your teams;
-- force change on everyone;
-- define rigorous standards;
-- ask Ops to lead the change;
-- copy latest KubeCon speaker;
+<p> Do not do these things when starting DevOps: </p>
 
+* `buy lots of new software;`
+* `rename your teams;`
+* `force change on everyone;`
+* `define rigorous standards;`
+* `ask Ops to lead the change;`
+* `copy latest KubeCon speaker;`
 
-- faster throughput – more frequent deployments, shorter lead times;
-- more stability – lower change failure rate, faster recovery time;
-- positive org impcat;
+<p> Pros when using DevOps: </p>
 
-
-Determine the Organization’s Priorities:
-- look at declared goals and OKRs;
-- recognize business opportunities and challenges;
-- interview a wide array of teams;
+* `faster throughput – more frequent deployments, shorter lead times;`
+* `more stability – lower change failure rate, faster recovery time;`
+* `positive org impcat;`
 
 
-List Methodologies and Practices in Place;
-- how do we design and develop software;
-- who creates tests and when do we test;
-- do we fund projects or products;
-- how do we use source control management;
-- how do we configure and update infrastructure;
-- how do we package, store and deploy software;
+<p> Determine the Organization’s Priorities: </p>
 
-Build an Inventory of Current Tech Investments:
-- planning and collaboration tools;
-- development and build solutions;
-- automation capabilities;
+* `look at declared goals and OKRs;`
+* `recognize business opportunities and challenges;`
+* `interview a wide array of teams;`
 
+
+<p> List Methodologies and Practices in Place; </p>
+
+* `how do we design and develop software;`
+* `who creates tests and when do we test;`
+* `do we fund projects or products;`
+* `how do we use source control management;`
+* `how do we configure and update infrastructure;`
+* `how do we package, store and deploy software;`
+
+<p> Build an Inventory of Current Tech Investments: </p>
+
+* `planning and collaboration tools;`
+* `development and build solutions;`
+* `automation capabilities;`
+* `change and release systems;`
+* `runtime platforms;`
+* `logging and monitoring systems;`
+
+<p> Recognize Drivers of Change Management: </p>
+
+* `identify who rolls out company changes;`
+* `invest in communications and training;`
+* `review past programs and what worked and didn't;`
 
 </div>
 </body>
