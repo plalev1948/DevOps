@@ -37,3 +37,16 @@ Undoing Changes:
 
 Example:
 * git add --help
+* Git status
+* code . = open editor VS Code
+
+
+Example of adding and pushing a commit:
+* Git add .
+* git status
+* git commit -m [name of commit]
+
+Example of creating a new branch:
+* git branch [name of branch]
+* git branch -a = display branches in local repo
+* git checkout [name of branch] = name of the branch we want to go to
