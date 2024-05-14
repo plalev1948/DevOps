@@ -50,3 +50,31 @@ Example of creating a new branch:
 * git branch [name of branch]
 * git branch -a = display branches in local repo
 * git checkout [name of branch] = name of the branch we want to go to
+
+Other commands:
+* git diff = to see the changes in the working directory;
+* git diff –staged
+* git diff head [filename]
+
+* git branch -a
+* git merge [filename] -m “Merge feature branch into main”
+
+* git log
+* git log –oneline
+* git branch -d [filename]
+* git log –oneline –graph
+* git branch -a
+
+There are different types of Team Workflows:
+- basic workflow;
+- feature based workflow;
+  * integrates feature branching off to main;
+  * a simpler alternative compared to other workflows
+- git flow;
+  * a popular workflow among many Git projects;
+  * contains one or more pre-production environments;
+  * adds additional layers of review that reduce errors and buggy code from getting into the main branch;
+  * extra layers of review can slow things down;
+  * can be confusing for new team members to contribute;
+  * the increase of branches can result in more conflicts;
+  * communication is key for this workflow to work;
