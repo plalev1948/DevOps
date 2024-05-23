@@ -207,6 +207,7 @@ associated with your system's network interfaces.
 * `ls` = list the contents of the parent directory to show the new subdirectory
 * `nono` = text editor
 * `touch` = quick way to create empty files with unused names. Note: Using `touch` on an existing file, by the way, will simply update the datetime stamp of the file, which can be useful for some administrative purposes.
+* `"Ctrl" + "O"` = save the changes you have made in the text editor.
 * `cp` = create copy. Note: create a copy of the file1 to a new directory
 * `globing` = a way of spreading an action across a global target. Add every file that starts with file, no matter the lenght of the name
 * `rm file?` = remove all files that start with file and have one digit after the word
