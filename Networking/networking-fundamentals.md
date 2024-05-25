@@ -108,3 +108,26 @@ SQL Database Protocols:
 - SQLnet  = operates on port number 1521;
 - SQL Server  = operates on port number 1433;
 
+TCP and UDP:
+
+- Transmission Control Protocol (TCP) – a protocol that initiates communication between two devices.
+The 3-way Handshake:
+SYN message – it’s the first message to the web server indicating that the client wants to start a conversation
+SYN-ACK – it’s just alerting the client that the user is available for the conversation.
+ACK – acknowledgment.
+
+The 4-way Disconnect: a FIN, respond with a FIN-ACK. The client is going to reply with it’s own FIN message and server is going to reply back to that with a FIN-ACK.
+
+TCP Reset – it can come from both the client and the server.
+
+
+- User Datagram Protocol (UDP) – works similarly to TCP, but this time we directly start to communicate. There are no 3-way handshakes, no 4-way disconnect. There are no reset’s. No reliable communication, no sequence numbers, no acknowledge numbers. It’s used for efficient data transfer.
+
+Protocol Hierarchy 
+
+Transport layer is responsible for building a session and maintaining a session between two endpoints, typically a client and a server.
+
+Port Numbers:
+- Server Port Numbers – Well known numbers / registered /. They go from 0 to 1023.
+- Client Port Numbers – ephemeral Port Numbers. They go from 1024 to 49 151. They are used by the client to identify the session.
+
