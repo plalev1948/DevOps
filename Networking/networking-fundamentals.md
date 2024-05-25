@@ -131,3 +131,8 @@ Port Numbers:
 - Server Port Numbers – Well known numbers / registered /. They go from 0 to 1023.
 - Client Port Numbers – ephemeral Port Numbers. They go from 1024 to 49 151. They are used by the client to identify the session.
 
+Introduction to Binary and Hexadecimal:
+
+In order to get the hexadecimal, we must get the binary number first and after that we find what’s the hexadecimal.
+
+Example for a number: 1001 (2)
