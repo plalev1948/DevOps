@@ -136,3 +136,44 @@ Introduction to Binary and Hexadecimal:
 In order to get the hexadecimal, we must get the binary number first and after that we find what’s the hexadecimal.
 
 Example for a number: 1001 (2)
+
+Introducing IPv4 Addressing:
+
+The network layer is where we use IP addressing to get messages from one device to another device on the internet.
+
+
+Example of an IP address: 203.0.113.10
+
+Network Portion: 203.0.113
+Host Portion: 10
+
+IP Address Construction:
+
+An IP address is consisted of 4 octets. An octet is just a set of 8 bits and there are 4 sets of 8 bits.
+
+203.0.113.10 = 11001011 00000000 01110001 00001010
+
+Classful Addressing (-1995 and prior)
+There are 5 different classful address:
+Class A: from 0.0.0.0 to 127.255.255.255
+Class B: from 128.0.0.0 to 191.255.255.255
+Class C: from 192.0.0.0 to 223.255.255.255
+Class D: from 224.0.0.0 to 239.255.255.255
+Class E: from 240.0.0.0 to 255.255.255.255
+
+The first three classes are called unicast addresses and these are the addresses we use on the internet. Class D addresses are for multicast. Class E is for experiments. In classful addressing, the class of the address determines the division between the network and the host portion.
+
+
+
+Classless Addressing (-1995 to present)
+
+Subnet mask: it’s consisted of a series of ‘1`s’, followed by a series of 0`s.
+
+Example: 203.0.113.10
+Subnet Mask: 11111111 11111111 11111111 00000000
+255.255.255.0
+
+Example 2: 10.0.0.10
+00001010 0000000 00000000 00001010
+11111111.0000000.0000000.0000000
+255.0.0.0
